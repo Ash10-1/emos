@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.emos.workflow.db.dao.TbReimDao">
+    <select id="searchReimByInstanceId" parameterType="String" resultType="HashMap">
+        SELECT r.id,
+               u.`name`,
+               d.dept_name AS deptId,
+               r.content,
+               r.amount,
+               r.anleihen,
+               r.balance,
+               r.type_id AS typeId,
+               r.`status`
+        FROM tb_reim r
+        JOIN tb_user u ON r.user_id = u.id
+        JOIN tb_dept d ON u.dept_id = d.id
+        WHERE instance_id = #{instanceId}
+    </select>
+    <update id="updateReimStatus" parameterType="HashMap">
+        UPDATE tb_reim
+        SET status = #{status}
+        WHERE instance_id = #{instanceId}
+    </update>
+</mapper>

@@ -1,0 +1,1554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   Allatori Obfuscator v7.6 DEMO
+   Web: http://www.allatori.com
+
+   Log created: Tue Nov 23 00:36:42 CST 2021
+-->
+
+<!--
+Class 'org.springframework.scheduling.quartz.QuartzJobBean' cannot be found.
+Class 'org.activiti.engine.delegate.JavaDelegate' cannot be found.
+Class 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter' cannot be found.
+Some classes weren't found. It may result in weaker obfuscation. Add needed jars to the 'classpath' element of the configuration file.
+CLASS NOT FOUND: org.activiti.engine.history.HistoricTaskInstance
+  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.
+CLASS NOT FOUND: com.fasterxml.jackson.databind.node.ArrayNode
+  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.
+CLASS NOT FOUND: cn.hutool.json.JSONArray
+  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.
+CLASS NOT FOUND: org.springframework.core.io.Resource
+  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.
+CLASS NOT FOUND: org.activiti.image.impl.DefaultProcessDiagramGenerator
+  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.
+CLASS NOT FOUND: javax.servlet.ServletOutputStream
+  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.
+CLASS NOT FOUND: javax.servlet.http.HttpServletResponse
+  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.
+CLASS NOT FOUND: org.activiti.bpmn.model.BpmnModel
+  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.
+CLASS NOT FOUND: cn.hutool.crypto.symmetric.AES
+  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.
+CLASS NOT FOUND: org.quartz.Trigger
+  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.
+CLASS NOT FOUND: org.quartz.JobDataMap
+  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.
+-->
+
+<allatori>
+ <mapping>
+  <class old="com.example.emos.workflow.db.pojo.TbReim" new="com.example.emos.workflow.db.pojo.TbReim">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="8" e="8"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="8" e="8"/>
+   <method old="getAmount()Ljava/math/BigDecimal;" new="getAmount" s="13" e="13"/>
+   <method old="getAnleihen()Ljava/math/BigDecimal;" new="getAnleihen" s="14" e="14"/>
+   <method old="getBalance()Ljava/math/BigDecimal;" new="getBalance" s="15" e="15"/>
+   <method old="getContent()Ljava/lang/String;" new="getContent" s="12" e="12"/>
+   <method old="getCreateTime()Ljava/util/Date;" new="getCreateTime" s="19" e="19"/>
+   <method old="getId()Ljava/lang/Integer;" new="getId" s="10" e="10"/>
+   <method old="getInstanceId()Ljava/lang/String;" new="getInstanceId" s="18" e="18"/>
+   <method old="getStatus()Ljava/lang/Byte;" new="getStatus" s="17" e="17"/>
+   <method old="getTypeId()Ljava/lang/Byte;" new="getTypeId" s="16" e="16"/>
+   <method old="getUserId()Ljava/lang/Integer;" new="getUserId" s="11" e="11"/>
+   <method old="hashCode()I" new="hashCode" s="8" e="8"/>
+   <method old="setAmount(Ljava/math/BigDecimal;)V" new="setAmount" s="8" e="8"/>
+   <method old="setAnleihen(Ljava/math/BigDecimal;)V" new="setAnleihen" s="8" e="8"/>
+   <method old="setBalance(Ljava/math/BigDecimal;)V" new="setBalance" s="8" e="8"/>
+   <method old="setContent(Ljava/lang/String;)V" new="setContent" s="8" e="8"/>
+   <method old="setCreateTime(Ljava/util/Date;)V" new="setCreateTime" s="8" e="8"/>
+   <method old="setId(Ljava/lang/Integer;)V" new="setId" s="8" e="8"/>
+   <method old="setInstanceId(Ljava/lang/String;)V" new="setInstanceId" s="8" e="8"/>
+   <method old="setStatus(Ljava/lang/Byte;)V" new="setStatus" s="8" e="8"/>
+   <method old="setTypeId(Ljava/lang/Byte;)V" new="setTypeId" s="8" e="8"/>
+   <method old="setUserId(Ljava/lang/Integer;)V" new="setUserId" s="8" e="8"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="8" e="8"/>
+   <field old="amount Ljava/math/BigDecimal;" new="amount"/>
+   <field old="anleihen Ljava/math/BigDecimal;" new="anleihen"/>
+   <field old="balance Ljava/math/BigDecimal;" new="balance"/>
+   <field old="content Ljava/lang/String;" new="content"/>
+   <field old="createTime Ljava/util/Date;" new="createTime"/>
+   <field old="id Ljava/lang/Integer;" new="id"/>
+   <field old="instanceId Ljava/lang/String;" new="instanceId"/>
+   <field old="status Ljava/lang/Byte;" new="status"/>
+   <field old="typeId Ljava/lang/Byte;" new="typeId"/>
+   <field old="userId Ljava/lang/Integer;" new="userId"/>
+  </class>
+  <class old="com.example.emos.workflow.config.quartz.QuartzUtil" new="com.example.emos.workflow.config.quartz.QuartzUtil">
+   <method old="addJob(Lorg/quartz/JobDetail;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)V" new="addJob" s="20" e="28"/>
+   <method old="deleteJob(Ljava/lang/String;Ljava/lang/String;)V" new="deleteJob" s="31" e="41"/>
+   <field old="log Lorg/slf4j/Logger;" new="log"/>
+   <field old="scheduler Lorg/quartz/Scheduler;" new="scheduler"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.form.ArchiveTaskForm" new="com.example.emos.workflow.controller.form.ArchiveTaskForm">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="10" e="10"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="10" e="10"/>
+   <method old="getCode()Ljava/lang/String;" new="getCode" s="13" e="13"/>
+   <method old="getFiles()Ljava/lang/String;" new="getFiles" s="23" e="23"/>
+   <method old="getTaskId()Ljava/lang/String;" new="getTaskId" s="16" e="16"/>
+   <method old="getTcode()Ljava/lang/String;" new="getTcode" s="27" e="27"/>
+   <method old="getUserId()Ljava/lang/Integer;" new="getUserId" s="20" e="20"/>
+   <method old="hashCode()I" new="hashCode" s="10" e="10"/>
+   <method old="setCode(Ljava/lang/String;)V" new="setCode" s="10" e="10"/>
+   <method old="setFiles(Ljava/lang/String;)V" new="setFiles" s="10" e="10"/>
+   <method old="setTaskId(Ljava/lang/String;)V" new="setTaskId" s="10" e="10"/>
+   <method old="setTcode(Ljava/lang/String;)V" new="setTcode" s="10" e="10"/>
+   <method old="setUserId(Ljava/lang/Integer;)V" new="setUserId" s="10" e="10"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="10" e="10"/>
+   <field old="code Ljava/lang/String;" new="code"/>
+   <field old="files Ljava/lang/String;" new="files"/>
+   <field old="taskId Ljava/lang/String;" new="taskId"/>
+   <field old="tcode Ljava/lang/String;" new="tcode"/>
+   <field old="userId Ljava/lang/Integer;" new="userId"/>
+  </class>
+  <class old="com.example.emos.workflow.config.DroolsConfiguration" new="com.example.emos.workflow.config.DroolsConfiguration">
+   <method old="getKieServices()Lorg/kie/api/KieServices;" new="getKieServices" s="54" e="54"/>
+   <method old="getRuleFiles()[Lorg/springframework/core/io/Resource;" new="getRuleFiles" s="39" e="40"/>
+   <method old="kieBase()Lorg/kie/api/KieBase;" new="kieBase" s="60" e="60"/>
+   <method old="kieContainer()Lorg/kie/api/runtime/KieContainer;" new="kieContainer" s="46" e="50"/>
+   <method old="kieFileSystem()Lorg/kie/api/builder/KieFileSystem;" new="kieFileSystem" s="31" e="35"/>
+   <method old="kiePostProcessor()Lorg/kie/spring/KModuleBeanFactoryPostProcessor;" new="kiePostProcessor" s="73" e="73"/>
+   <method old="kieSession()Lorg/kie/api/runtime/KieSession;" new="kieSession" s="66" e="67"/>
+   <field old="RULES_PATH Ljava/lang/String;" new="RULES_PATH"/>
+  </class>
+  <class old="com.example.emos.workflow.db.dao.TbUserDao" new="com.example.emos.workflow.db.dao.TbUserDao">
+   <method old="searchEmailByIds([I)Ljava/util/ArrayList;" new="searchEmailByIds"/>
+   <method old="searchEmailByRoles([Ljava/lang/String;)Ljava/util/ArrayList;" new="searchEmailByRoles"/>
+  </class>
+  <class old="com.example.emos.workflow.exception.EmosException" new="com.example.emos.workflow.exception.EmosException">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="5" e="5"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="5" e="5"/>
+   <method old="getCode()I" new="getCode" s="8" e="8"/>
+   <method old="getMsg()Ljava/lang/String;" new="getMsg" s="7" e="7"/>
+   <method old="hashCode()I" new="hashCode" s="5" e="5"/>
+   <method old="setCode(I)V" new="setCode" s="5" e="5"/>
+   <method old="setMsg(Ljava/lang/String;)V" new="setMsg" s="5" e="5"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="5" e="5"/>
+   <field old="code I" new="code"/>
+   <field old="msg Ljava/lang/String;" new="msg"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.form.StartMeetingProcessForm" new="com.example.emos.workflow.controller.form.StartMeetingProcessForm">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="10" e="10"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="10" e="10"/>
+   <method old="getCode()Ljava/lang/String;" new="getCode" s="39" e="39"/>
+   <method old="getCreatorId()Ljava/lang/Integer;" new="getCreatorId" s="17" e="17"/>
+   <method old="getCreatorName()Ljava/lang/String;" new="getCreatorName" s="21" e="21"/>
+   <method old="getDate()Ljava/lang/String;" new="getDate" s="43" e="43"/>
+   <method old="getGmId()Ljava/lang/Integer;" new="getGmId" s="28" e="28"/>
+   <method old="getManagerId()Ljava/lang/Integer;" new="getManagerId" s="31" e="31"/>
+   <method old="getMeetingType()Ljava/lang/String;" new="getMeetingType" s="51" e="51"/>
+   <method old="getSameDept()Ljava/lang/Boolean;" new="getSameDept" s="36" e="36"/>
+   <method old="getStart()Ljava/lang/String;" new="getStart" s="47" e="47"/>
+   <method old="getTcode()Ljava/lang/String;" new="getTcode" s="55" e="55"/>
+   <method old="getTitle()Ljava/lang/String;" new="getTitle" s="25" e="25"/>
+   <method old="getUrl()Ljava/lang/String;" new="getUrl" s="34" e="34"/>
+   <method old="getUuid()Ljava/lang/String;" new="getUuid" s="13" e="13"/>
+   <method old="hashCode()I" new="hashCode" s="10" e="10"/>
+   <method old="setCode(Ljava/lang/String;)V" new="setCode" s="10" e="10"/>
+   <method old="setCreatorId(Ljava/lang/Integer;)V" new="setCreatorId" s="10" e="10"/>
+   <method old="setCreatorName(Ljava/lang/String;)V" new="setCreatorName" s="10" e="10"/>
+   <method old="setDate(Ljava/lang/String;)V" new="setDate" s="10" e="10"/>
+   <method old="setGmId(Ljava/lang/Integer;)V" new="setGmId" s="10" e="10"/>
+   <method old="setManagerId(Ljava/lang/Integer;)V" new="setManagerId" s="10" e="10"/>
+   <method old="setMeetingType(Ljava/lang/String;)V" new="setMeetingType" s="10" e="10"/>
+   <method old="setSameDept(Ljava/lang/Boolean;)V" new="setSameDept" s="10" e="10"/>
+   <method old="setStart(Ljava/lang/String;)V" new="setStart" s="10" e="10"/>
+   <method old="setTcode(Ljava/lang/String;)V" new="setTcode" s="10" e="10"/>
+   <method old="setTitle(Ljava/lang/String;)V" new="setTitle" s="10" e="10"/>
+   <method old="setUrl(Ljava/lang/String;)V" new="setUrl" s="10" e="10"/>
+   <method old="setUuid(Ljava/lang/String;)V" new="setUuid" s="10" e="10"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="10" e="10"/>
+   <field old="code Ljava/lang/String;" new="code"/>
+   <field old="creatorId Ljava/lang/Integer;" new="creatorId"/>
+   <field old="creatorName Ljava/lang/String;" new="creatorName"/>
+   <field old="date Ljava/lang/String;" new="date"/>
+   <field old="gmId Ljava/lang/Integer;" new="gmId"/>
+   <field old="managerId Ljava/lang/Integer;" new="managerId"/>
+   <field old="meetingType Ljava/lang/String;" new="meetingType"/>
+   <field old="sameDept Ljava/lang/Boolean;" new="sameDept"/>
+   <field old="start Ljava/lang/String;" new="start"/>
+   <field old="tcode Ljava/lang/String;" new="tcode"/>
+   <field old="title Ljava/lang/String;" new="title"/>
+   <field old="url Ljava/lang/String;" new="url"/>
+   <field old="uuid Ljava/lang/String;" new="uuid"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.form.SearchApprovalContentForm" new="com.example.emos.workflow.controller.form.SearchApprovalContentForm">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="ALLATORIxDEMO"/>
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="7" e="7"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="7" e="7"/>
+   <method old="getCode()Ljava/lang/String;" new="getCode" s="29" e="29"/>
+   <method old="getInstanceId()Ljava/lang/String;" new="getInstanceId" s="11" e="11"/>
+   <method old="getRole()[Ljava/lang/String;" new="getRole" s="18" e="18"/>
+   <method old="getStatus()Ljava/lang/String;" new="getStatus" s="26" e="26"/>
+   <method old="getTcode()Ljava/lang/String;" new="getTcode" s="33" e="33"/>
+   <method old="getType()Ljava/lang/String;" new="getType" s="22" e="22"/>
+   <method old="getUserId()Ljava/lang/Integer;" new="getUserId" s="15" e="15"/>
+   <method old="hashCode()I" new="hashCode" s="7" e="7"/>
+   <method old="setCode(Ljava/lang/String;)V" new="setCode" s="7" e="7"/>
+   <method old="setInstanceId(Ljava/lang/String;)V" new="setInstanceId" s="7" e="7"/>
+   <method old="setRole([Ljava/lang/String;)V" new="setRole" s="7" e="7"/>
+   <method old="setStatus(Ljava/lang/String;)V" new="setStatus" s="7" e="7"/>
+   <method old="setTcode(Ljava/lang/String;)V" new="setTcode" s="7" e="7"/>
+   <method old="setType(Ljava/lang/String;)V" new="setType" s="7" e="7"/>
+   <method old="setUserId(Ljava/lang/Integer;)V" new="setUserId" s="7" e="7"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="7" e="7"/>
+   <field old="code Ljava/lang/String;" new="code"/>
+   <field old="instanceId Ljava/lang/String;" new="instanceId"/>
+   <field old="role [Ljava/lang/String;" new="role"/>
+   <field old="status Ljava/lang/String;" new="status"/>
+   <field old="tcode Ljava/lang/String;" new="tcode"/>
+   <field old="type Ljava/lang/String;" new="type"/>
+   <field old="userId Ljava/lang/Integer;" new="userId"/>
+  </class>
+  <class old="com.example.emos.workflow.db.pojo.TbUser" new="com.example.emos.workflow.db.pojo.TbUser">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="8" e="8"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="8" e="8"/>
+   <method old="getCreateTime()Ljava/util/Date;" new="getCreateTime" s="89" e="89"/>
+   <method old="getDeptId()Ljava/lang/Integer;" new="getDeptId" s="79" e="79"/>
+   <method old="getEmail()Ljava/lang/String;" new="getEmail" s="59" e="59"/>
+   <method old="getHiredate()Ljava/util/Date;" new="getHiredate" s="64" e="64"/>
+   <method old="getId()Ljava/lang/Integer;" new="getId" s="13" e="13"/>
+   <method old="getName()Ljava/lang/String;" new="getName" s="44" e="44"/>
+   <method old="getNickname()Ljava/lang/String;" new="getNickname" s="34" e="34"/>
+   <method old="getOpenId()Ljava/lang/String;" new="getOpenId" s="29" e="29"/>
+   <method old="getPassword()Ljava/lang/String;" new="getPassword" s="24" e="24"/>
+   <method old="getPhoto()Ljava/lang/String;" new="getPhoto" s="39" e="39"/>
+   <method old="getRole()Ljava/lang/Object;" new="getRole" s="69" e="69"/>
+   <method old="getRoot()Ljava/lang/Boolean;" new="getRoot" s="74" e="74"/>
+   <method old="getSex()Ljava/lang/Object;" new="getSex" s="49" e="49"/>
+   <method old="getStatus()Ljava/lang/Byte;" new="getStatus" s="84" e="84"/>
+   <method old="getTel()Ljava/lang/String;" new="getTel" s="54" e="54"/>
+   <method old="getUsername()Ljava/lang/String;" new="getUsername" s="18" e="18"/>
+   <method old="hashCode()I" new="hashCode" s="8" e="8"/>
+   <method old="setCreateTime(Ljava/util/Date;)V" new="setCreateTime" s="8" e="8"/>
+   <method old="setDeptId(Ljava/lang/Integer;)V" new="setDeptId" s="8" e="8"/>
+   <method old="setEmail(Ljava/lang/String;)V" new="setEmail" s="8" e="8"/>
+   <method old="setHiredate(Ljava/util/Date;)V" new="setHiredate" s="8" e="8"/>
+   <method old="setId(Ljava/lang/Integer;)V" new="setId" s="8" e="8"/>
+   <method old="setName(Ljava/lang/String;)V" new="setName" s="8" e="8"/>
+   <method old="setNickname(Ljava/lang/String;)V" new="setNickname" s="8" e="8"/>
+   <method old="setOpenId(Ljava/lang/String;)V" new="setOpenId" s="8" e="8"/>
+   <method old="setPassword(Ljava/lang/String;)V" new="setPassword" s="8" e="8"/>
+   <method old="setPhoto(Ljava/lang/String;)V" new="setPhoto" s="8" e="8"/>
+   <method old="setRole(Ljava/lang/Object;)V" new="setRole" s="8" e="8"/>
+   <method old="setRoot(Ljava/lang/Boolean;)V" new="setRoot" s="8" e="8"/>
+   <method old="setSex(Ljava/lang/Object;)V" new="setSex" s="8" e="8"/>
+   <method old="setStatus(Ljava/lang/Byte;)V" new="setStatus" s="8" e="8"/>
+   <method old="setTel(Ljava/lang/String;)V" new="setTel" s="8" e="8"/>
+   <method old="setUsername(Ljava/lang/String;)V" new="setUsername" s="8" e="8"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="8" e="8"/>
+   <field old="createTime Ljava/util/Date;" new="createTime"/>
+   <field old="deptId Ljava/lang/Integer;" new="deptId"/>
+   <field old="email Ljava/lang/String;" new="email"/>
+   <field old="hiredate Ljava/util/Date;" new="hiredate"/>
+   <field old="id Ljava/lang/Integer;" new="id"/>
+   <field old="name Ljava/lang/String;" new="name"/>
+   <field old="nickname Ljava/lang/String;" new="nickname"/>
+   <field old="openId Ljava/lang/String;" new="openId"/>
+   <field old="password Ljava/lang/String;" new="password"/>
+   <field old="photo Ljava/lang/String;" new="photo"/>
+   <field old="role Ljava/lang/Object;" new="role"/>
+   <field old="root Ljava/lang/Boolean;" new="root"/>
+   <field old="serialVersionUID J" new="serialVersionUID"/>
+   <field old="sex Ljava/lang/Object;" new="sex"/>
+   <field old="status Ljava/lang/Byte;" new="status"/>
+   <field old="tel Ljava/lang/String;" new="tel"/>
+   <field old="username Ljava/lang/String;" new="username"/>
+  </class>
+  <class old="com.example.emos.workflow.service.impl.MeetingServiceImpl" new="com.example.emos.workflow.service.impl.MeetingServiceImpl">
+   <method old="searchMeetingByInstanceId(Ljava/lang/String;)Ljava/util/HashMap;" new="searchMeetingByInstanceId" s="29" e="37"/>
+   <method old="searchMeetingByUUID(Ljava/lang/String;)Ljava/util/HashMap;" new="searchMeetingByUUID" s="42" e="43"/>
+   <method old="searchMeetingUnpresent(Ljava/lang/String;)Ljava/util/ArrayList;" new="searchMeetingUnpresent" s="70" e="71"/>
+   <method old="searchRoomIdByUUID(Ljava/lang/String;)Ljava/lang/Long;" new="searchRoomIdByUUID" s="49" e="51"/>
+   <method old="searchUserMeetingInMonth(Ljava/util/HashMap;)Ljava/util/List;" new="searchUserMeetingInMonth" s="56" e="57"/>
+   <method old="updateMeetingStatus(Ljava/util/HashMap;)V" new="updateMeetingStatus" s="62" e="66"/>
+   <method old="updateMeetingUnpresent(Ljava/util/HashMap;)I" new="updateMeetingUnpresent" s="76" e="77"/>
+   <field old="meetingDao Lcom/example/emos/workflow/db/dao/TbMeetingDao;" new="meetingDao"/>
+   <field old="redisTemplate Lorg/springframework/data/redis/core/RedisTemplate;" new="redisTemplate"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.form.SearchUserTaskListByPageForm" new="com.example.emos.workflow.controller.form.SearchUserTaskListByPageForm">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="ALLATORIxDEMO"/>
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="11" e="11"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="11" e="11"/>
+   <method old="getCode()Ljava/lang/String;" new="getCode" s="30" e="30"/>
+   <method old="getLength()Ljava/lang/Integer;" new="getLength" s="27" e="27"/>
+   <method old="getPage()Ljava/lang/Integer;" new="getPage" s="23" e="23"/>
+   <method old="getTcode()Ljava/lang/String;" new="getTcode" s="34" e="34"/>
+   <method old="getType()Ljava/lang/String;" new="getType" s="19" e="19"/>
+   <method old="getUserId()Ljava/lang/Integer;" new="getUserId" s="16" e="16"/>
+   <method old="hashCode()I" new="hashCode" s="11" e="11"/>
+   <method old="setCode(Ljava/lang/String;)V" new="setCode" s="11" e="11"/>
+   <method old="setLength(Ljava/lang/Integer;)V" new="setLength" s="11" e="11"/>
+   <method old="setPage(Ljava/lang/Integer;)V" new="setPage" s="11" e="11"/>
+   <method old="setTcode(Ljava/lang/String;)V" new="setTcode" s="11" e="11"/>
+   <method old="setType(Ljava/lang/String;)V" new="setType" s="11" e="11"/>
+   <method old="setUserId(Ljava/lang/Integer;)V" new="setUserId" s="11" e="11"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="11" e="11"/>
+   <field old="code Ljava/lang/String;" new="code"/>
+   <field old="length Ljava/lang/Integer;" new="length"/>
+   <field old="page Ljava/lang/Integer;" new="page"/>
+   <field old="tcode Ljava/lang/String;" new="tcode"/>
+   <field old="type Ljava/lang/String;" new="type"/>
+   <field old="userId Ljava/lang/Integer;" new="userId"/>
+  </class>
+  <class old="com.example.emos.workflow.service.AmectTypeService" new="com.example.emos.workflow.service.AmectTypeService">
+   <method old="searchByType(Ljava/lang/String;)Ljava/util/HashMap;" new="searchByType"/>
+  </class>
+  <class old="com.example.emos.workflow.util.R" new="com.example.emos.workflow.util.R">
+   <method old="error()Lcom/example/emos/workflow/util/R;" new="error" s="41" e="41"/>
+   <method old="error(ILjava/lang/String;)Lcom/example/emos/workflow/util/R;" new="error" s="32" e="35"/>
+   <method old="error(Ljava/lang/String;)Lcom/example/emos/workflow/util/R;" new="error" s="38" e="38"/>
+   <method old="ok()Lcom/example/emos/workflow/util/R;" new="ok" s="18" e="18"/>
+   <method old="ok(Ljava/lang/String;)Lcom/example/emos/workflow/util/R;" new="ok" s="21" e="23"/>
+   <method old="ok(Ljava/util/Map;)Lcom/example/emos/workflow/util/R;" new="ok" s="26" e="28"/>
+   <method old="put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;" new="put" s="8" e="8"/>
+   <method old="put(Ljava/lang/String;Ljava/lang/Object;)Lcom/example/emos/workflow/util/R;" new="put" s="14" e="15"/>
+  </class>
+  <class old="com.example.emos.workflow.task.EmailTask" new="com.example.emos.workflow.task.EmailTask">
+   <method old="sendAsync(Lorg/springframework/mail/SimpleMailMessage;)V" new="sendAsync" s="23" e="25"/>
+   <field old="javaMailSender Lorg/springframework/mail/javamail/JavaMailSender;" new="javaMailSender"/>
+   <field old="mailbox Ljava/lang/String;" new="mailbox"/>
+  </class>
+  <class old="com.example.emos.workflow.service.LeaveService" new="com.example.emos.workflow.service.LeaveService">
+   <method old="searchLeaveByInstanceId(Ljava/lang/String;)Ljava/util/HashMap;" new="searchLeaveByInstanceId"/>
+  </class>
+  <class old="com.example.emos.workflow.config.quartz.MeetingStatusJob$1" new="com.example.emos.workflow.config.quartz.MeetingStatusJob$1">
+   <field old="this$0 Lcom/example/emos/workflow/config/quartz/MeetingStatusJob;" new="this$0"/>
+   <field old="val$array Lcn/hutool/json/JSONArray;" new="val$array"/>
+   <field old="val$uuid Ljava/lang/String;" new="val$uuid"/>
+  </class>
+  <class old="com.example.emos.workflow.config.ThreadPoolConfig" new="com.example.emos.workflow.config.ThreadPoolConfig">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="ALLATORIxDEMO"/>
+   <method old="taskExecutor()Lorg/springframework/core/task/AsyncTaskExecutor;" new="taskExecutor" s="14" e="28"/>
+  </class>
+  <class old="com.example.emos.workflow.db.dao.TbMeetingDao" new="com.example.emos.workflow.db.dao.TbMeetingDao">
+   <method old="searchMeetingByInstanceId(Ljava/lang/String;)Ljava/util/HashMap;" new="searchMeetingByInstanceId"/>
+   <method old="searchMeetingByUUID(Ljava/lang/String;)Ljava/util/HashMap;" new="searchMeetingByUUID"/>
+   <method old="searchMeetingMembersInSameDept(Ljava/lang/String;)Z" new="searchMeetingMembersInSameDept"/>
+   <method old="searchMeetingUnpresent(Ljava/lang/String;)Ljava/util/ArrayList;" new="searchMeetingUnpresent"/>
+   <method old="searchUserMeetingInMonth(Ljava/util/HashMap;)Ljava/util/List;" new="searchUserMeetingInMonth"/>
+   <method old="updateMeetingStatus(Ljava/util/HashMap;)I" new="updateMeetingStatus"/>
+   <method old="updateMeetingUnpresent(Ljava/util/HashMap;)I" new="updateMeetingUnpresent"/>
+  </class>
+  <class old="com.example.emos.workflow.db.dao.TbAmectDao" new="com.example.emos.workflow.db.dao.TbAmectDao">
+   <method old="insert(Lcom/example/emos/workflow/db/pojo/TbAmect;)I" new="insert"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.form.StartLeaveProcessForm" new="com.example.emos.workflow.controller.form.StartLeaveProcessForm">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="11" e="11"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="11" e="11"/>
+   <method old="getCode()Ljava/lang/String;" new="getCode" s="40" e="40"/>
+   <method old="getCreatorId()Ljava/lang/Integer;" new="getCreatorId" s="15" e="15"/>
+   <method old="getCreatorName()Ljava/lang/String;" new="getCreatorName" s="19" e="19"/>
+   <method old="getDays()Ljava/lang/Double;" new="getDays" s="34" e="34"/>
+   <method old="getGmId()Ljava/lang/Integer;" new="getGmId" s="27" e="27"/>
+   <method old="getManagerId()Ljava/lang/Integer;" new="getManagerId" s="31" e="31"/>
+   <method old="getTcode()Ljava/lang/String;" new="getTcode" s="44" e="44"/>
+   <method old="getTitle()Ljava/lang/String;" new="getTitle" s="23" e="23"/>
+   <method old="getUrl()Ljava/lang/String;" new="getUrl" s="37" e="37"/>
+   <method old="hashCode()I" new="hashCode" s="11" e="11"/>
+   <method old="setCode(Ljava/lang/String;)V" new="setCode" s="11" e="11"/>
+   <method old="setCreatorId(Ljava/lang/Integer;)V" new="setCreatorId" s="11" e="11"/>
+   <method old="setCreatorName(Ljava/lang/String;)V" new="setCreatorName" s="11" e="11"/>
+   <method old="setDays(Ljava/lang/Double;)V" new="setDays" s="11" e="11"/>
+   <method old="setGmId(Ljava/lang/Integer;)V" new="setGmId" s="11" e="11"/>
+   <method old="setManagerId(Ljava/lang/Integer;)V" new="setManagerId" s="11" e="11"/>
+   <method old="setTcode(Ljava/lang/String;)V" new="setTcode" s="11" e="11"/>
+   <method old="setTitle(Ljava/lang/String;)V" new="setTitle" s="11" e="11"/>
+   <method old="setUrl(Ljava/lang/String;)V" new="setUrl" s="11" e="11"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="11" e="11"/>
+   <field old="code Ljava/lang/String;" new="code"/>
+   <field old="creatorId Ljava/lang/Integer;" new="creatorId"/>
+   <field old="creatorName Ljava/lang/String;" new="creatorName"/>
+   <field old="days Ljava/lang/Double;" new="days"/>
+   <field old="gmId Ljava/lang/Integer;" new="gmId"/>
+   <field old="managerId Ljava/lang/Integer;" new="managerId"/>
+   <field old="tcode Ljava/lang/String;" new="tcode"/>
+   <field old="title Ljava/lang/String;" new="title"/>
+   <field old="url Ljava/lang/String;" new="url"/>
+  </class>
+  <class old="com.example.emos.workflow.bpmn.NotifyReimService" new="com.example.emos.workflow.bpmn.NotifyReimService">
+   <method old="execute(Lorg/activiti/engine/delegate/DelegateExecution;)V" new="execute" s="40" e="76"/>
+   <field old="emailTask Lcom/example/emos/workflow/task/EmailTask;" new="emailTask"/>
+   <field old="historyService Lorg/activiti/engine/HistoryService;" new="historyService"/>
+   <field old="reimDao Lcom/example/emos/workflow/db/dao/TbReimDao;" new="reimDao"/>
+   <field old="userDao Lcom/example/emos/workflow/db/dao/TbUserDao;" new="userDao"/>
+  </class>
+  <class old="com.example.emos.workflow.bpmn.NotifyLeaveService" new="com.example.emos.workflow.bpmn.NotifyLeaveService">
+   <method old="execute(Lorg/activiti/engine/delegate/DelegateExecution;)V" new="execute" s="37" e="74"/>
+   <field old="emailTask Lcom/example/emos/workflow/task/EmailTask;" new="emailTask"/>
+   <field old="historyService Lorg/activiti/engine/HistoryService;" new="historyService"/>
+   <field old="leaveDao Lcom/example/emos/workflow/db/dao/TbLeaveDao;" new="leaveDao"/>
+   <field old="userDao Lcom/example/emos/workflow/db/dao/TbUserDao;" new="userDao"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.form.StopProcessForm" new="com.example.emos.workflow.controller.form.StopProcessForm">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="7" e="7"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="7" e="7"/>
+   <method old="getCode()Ljava/lang/String;" new="getCode" s="13" e="13"/>
+   <method old="getInstanceId()Ljava/lang/String;" new="getInstanceId" s="10" e="10"/>
+   <method old="hashCode()I" new="hashCode" s="7" e="7"/>
+   <method old="setCode(Ljava/lang/String;)V" new="setCode" s="7" e="7"/>
+   <method old="setInstanceId(Ljava/lang/String;)V" new="setInstanceId" s="7" e="7"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="7" e="7"/>
+   <field old="code Ljava/lang/String;" new="code"/>
+   <field old="instanceId Ljava/lang/String;" new="instanceId"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.WorkFlowController$1" new="com.example.emos.workflow.controller.WorkFlowController$1">
+   <field old="this$0 Lcom/example/emos/workflow/controller/WorkFlowController;" new="this$0"/>
+   <field old="val$form Lcom/example/emos/workflow/controller/form/ArchiveTaskForm;" new="val$form"/>
+  </class>
+  <class old="com.example.emos.workflow.bpmn.NotifyLeaveService$1" new="com.example.emos.workflow.bpmn.NotifyLeaveService$1">
+   <field old="this$0 Lcom/example/emos/workflow/bpmn/NotifyLeaveService;" new="this$0"/>
+   <field old="val$instanceId Ljava/lang/String;" new="val$instanceId"/>
+   <field old="val$result Ljava/lang/String;" new="val$result"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.WorkFlowController$2" new="com.example.emos.workflow.controller.WorkFlowController$2">
+   <field old="this$0 Lcom/example/emos/workflow/controller/WorkFlowController;" new="this$0"/>
+   <field old="val$tcode Ljava/lang/String;" new="val$tcode"/>
+  </class>
+  <class old="com.example.emos.workflow.db.pojo.TbMeeting" new="com.example.emos.workflow.db.pojo.TbMeeting">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="7" e="7"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="7" e="7"/>
+   <method old="getCreateTime()Ljava/util/Date;" new="getCreateTime" s="81" e="81"/>
+   <method old="getCreatorId()Ljava/lang/Long;" new="getCreatorId" s="27" e="27"/>
+   <method old="getDate()Ljava/lang/String;" new="getDate" s="32" e="32"/>
+   <method old="getDesc()Ljava/lang/String;" new="getDesc" s="62" e="62"/>
+   <method old="getEnd()Ljava/lang/String;" new="getEnd" s="47" e="47"/>
+   <method old="getId()Ljava/lang/Long;" new="getId" s="12" e="12"/>
+   <method old="getInstanceId()Ljava/lang/String;" new="getInstanceId" s="67" e="67"/>
+   <method old="getMembers()Ljava/lang/String;" new="getMembers" s="57" e="57"/>
+   <method old="getPlace()Ljava/lang/String;" new="getPlace" s="37" e="37"/>
+   <method old="getPresent()Ljava/lang/String;" new="getPresent" s="69" e="69"/>
+   <method old="getStart()Ljava/lang/String;" new="getStart" s="42" e="42"/>
+   <method old="getStatus()Ljava/lang/Short;" new="getStatus" s="76" e="76"/>
+   <method old="getTitle()Ljava/lang/String;" new="getTitle" s="22" e="22"/>
+   <method old="getType()Ljava/lang/Short;" new="getType" s="52" e="52"/>
+   <method old="getUnpresent()Ljava/lang/String;" new="getUnpresent" s="71" e="71"/>
+   <method old="getUuid()Ljava/lang/String;" new="getUuid" s="17" e="17"/>
+   <method old="hashCode()I" new="hashCode" s="7" e="7"/>
+   <method old="setCreateTime(Ljava/util/Date;)V" new="setCreateTime" s="7" e="7"/>
+   <method old="setCreatorId(Ljava/lang/Long;)V" new="setCreatorId" s="7" e="7"/>
+   <method old="setDate(Ljava/lang/String;)V" new="setDate" s="7" e="7"/>
+   <method old="setDesc(Ljava/lang/String;)V" new="setDesc" s="7" e="7"/>
+   <method old="setEnd(Ljava/lang/String;)V" new="setEnd" s="7" e="7"/>
+   <method old="setId(Ljava/lang/Long;)V" new="setId" s="7" e="7"/>
+   <method old="setInstanceId(Ljava/lang/String;)V" new="setInstanceId" s="7" e="7"/>
+   <method old="setMembers(Ljava/lang/String;)V" new="setMembers" s="7" e="7"/>
+   <method old="setPlace(Ljava/lang/String;)V" new="setPlace" s="7" e="7"/>
+   <method old="setPresent(Ljava/lang/String;)V" new="setPresent" s="7" e="7"/>
+   <method old="setStart(Ljava/lang/String;)V" new="setStart" s="7" e="7"/>
+   <method old="setStatus(Ljava/lang/Short;)V" new="setStatus" s="7" e="7"/>
+   <method old="setTitle(Ljava/lang/String;)V" new="setTitle" s="7" e="7"/>
+   <method old="setType(Ljava/lang/Short;)V" new="setType" s="7" e="7"/>
+   <method old="setUnpresent(Ljava/lang/String;)V" new="setUnpresent" s="7" e="7"/>
+   <method old="setUuid(Ljava/lang/String;)V" new="setUuid" s="7" e="7"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="7" e="7"/>
+   <field old="createTime Ljava/util/Date;" new="createTime"/>
+   <field old="creatorId Ljava/lang/Long;" new="creatorId"/>
+   <field old="date Ljava/lang/String;" new="date"/>
+   <field old="desc Ljava/lang/String;" new="desc"/>
+   <field old="end Ljava/lang/String;" new="end"/>
+   <field old="id Ljava/lang/Long;" new="id"/>
+   <field old="instanceId Ljava/lang/String;" new="instanceId"/>
+   <field old="members Ljava/lang/String;" new="members"/>
+   <field old="place Ljava/lang/String;" new="place"/>
+   <field old="present Ljava/lang/String;" new="present"/>
+   <field old="serialVersionUID J" new="serialVersionUID"/>
+   <field old="start Ljava/lang/String;" new="start"/>
+   <field old="status Ljava/lang/Short;" new="status"/>
+   <field old="title Ljava/lang/String;" new="title"/>
+   <field old="type Ljava/lang/Short;" new="type"/>
+   <field old="unpresent Ljava/lang/String;" new="unpresent"/>
+   <field old="uuid Ljava/lang/String;" new="uuid"/>
+  </class>
+  <class old="com.example.emos.workflow.db.dao.TbReimDao" new="com.example.emos.workflow.db.dao.TbReimDao">
+   <method old="searchReimByInstanceId(Ljava/lang/String;)Ljava/util/HashMap;" new="searchReimByInstanceId"/>
+   <method old="updateReimStatus(Ljava/util/HashMap;)I" new="updateReimStatus"/>
+  </class>
+  <class old="com.example.emos.workflow.service.impl.ReimServiceImpl" new="com.example.emos.workflow.service.impl.ReimServiceImpl">
+   <method old="searchReimByInstanceId(Ljava/lang/String;)Ljava/util/HashMap;" new="searchReimByInstanceId" s="18" e="19"/>
+   <field old="reimDao Lcom/example/emos/workflow/db/dao/TbReimDao;" new="reimDao"/>
+  </class>
+  <class old="com.example.emos.workflow.config.ExceptionAdvice" new="com.example.emos.workflow.config.ExceptionAdvice">
+   <method old="exceptionHandler(Ljava/lang/Exception;)Ljava/lang/String;" new="exceptionHandler" s="19" e="29"/>
+   <field old="log Lorg/slf4j/Logger;" new="log"/>
+  </class>
+  <class old="com.example.emos.workflow.EmosWorkflowApplication" new="com.example.emos.workflow.EmosWorkflowApplication">
+   <method old="main([Ljava/lang/String;)V" new="main" s="20" e="29"/>
+   <field old="log Lorg/slf4j/Logger;" new="log"/>
+  </class>
+  <class old="com.example.emos.workflow.service.WorkflowService" new="com.example.emos.workflow.service.WorkflowService">
+   <method old="approvalTask(Ljava/util/HashMap;)V" new="approvalTask"/>
+   <method old="archiveTask(Ljava/util/HashMap;)V" new="archiveTask"/>
+   <method old="deleteProcessById(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V" new="deleteProcessById"/>
+   <method old="searchApprovalContent(Ljava/lang/String;I[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/HashMap;" new="searchApprovalContent"/>
+   <method old="searchProcessStatus(Ljava/lang/String;)Z" new="searchProcessStatus"/>
+   <method old="searchProcessUsers(Ljava/lang/String;)Ljava/util/ArrayList;" new="searchProcessUsers"/>
+   <method old="searchTaskByPage(Ljava/util/HashMap;)Ljava/util/HashMap;" new="searchTaskByPage"/>
+   <method old="searchUserTaskListByPage(Ljava/util/HashMap;)Ljava/util/ArrayList;" new="searchUserTaskListByPage"/>
+   <method old="startLeaveProcess(Ljava/util/HashMap;)Ljava/lang/String;" new="startLeaveProcess"/>
+   <method old="startMeetingProcess(Ljava/util/HashMap;)Ljava/lang/String;" new="startMeetingProcess"/>
+   <method old="startReimProcess(Ljava/util/HashMap;)Ljava/lang/String;" new="startReimProcess"/>
+   <method old="turnTask(II)V" new="turnTask"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.form.SearchProcessStatusForm" new="com.example.emos.workflow.controller.form.SearchProcessStatusForm">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="8" e="8"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="8" e="8"/>
+   <method old="getCode()Ljava/lang/String;" new="getCode" s="14" e="14"/>
+   <method old="getInstanceId()Ljava/lang/String;" new="getInstanceId" s="11" e="11"/>
+   <method old="getTcode()Ljava/lang/String;" new="getTcode" s="18" e="18"/>
+   <method old="hashCode()I" new="hashCode" s="8" e="8"/>
+   <method old="setCode(Ljava/lang/String;)V" new="setCode" s="8" e="8"/>
+   <method old="setInstanceId(Ljava/lang/String;)V" new="setInstanceId" s="8" e="8"/>
+   <method old="setTcode(Ljava/lang/String;)V" new="setTcode" s="8" e="8"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="8" e="8"/>
+   <field old="code Ljava/lang/String;" new="code"/>
+   <field old="instanceId Ljava/lang/String;" new="instanceId"/>
+   <field old="tcode Ljava/lang/String;" new="tcode"/>
+  </class>
+  <class old="com.example.emos.workflow.service.impl.AmectTypeServiceImpl" new="com.example.emos.workflow.service.impl.AmectTypeServiceImpl">
+   <method old="searchByType(Ljava/lang/String;)Ljava/util/HashMap;" new="searchByType" s="19" e="20"/>
+   <field old="amectTypeDao Lcom/example/emos/workflow/db/dao/TbAmectTypeDao;" new="amectTypeDao"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.form.SearchApprovalBpmnForm" new="com.example.emos.workflow.controller.form.SearchApprovalBpmnForm">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="8" e="8"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="8" e="8"/>
+   <method old="getCode()Ljava/lang/String;" new="getCode" s="14" e="14"/>
+   <method old="getInstanceId()Ljava/lang/String;" new="getInstanceId" s="11" e="11"/>
+   <method old="getTcode()Ljava/lang/String;" new="getTcode" s="18" e="18"/>
+   <method old="hashCode()I" new="hashCode" s="8" e="8"/>
+   <method old="setCode(Ljava/lang/String;)V" new="setCode" s="8" e="8"/>
+   <method old="setInstanceId(Ljava/lang/String;)V" new="setInstanceId" s="8" e="8"/>
+   <method old="setTcode(Ljava/lang/String;)V" new="setTcode" s="8" e="8"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="8" e="8"/>
+   <field old="code Ljava/lang/String;" new="code"/>
+   <field old="instanceId Ljava/lang/String;" new="instanceId"/>
+   <field old="tcode Ljava/lang/String;" new="tcode"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.WorkFlowController" new="com.example.emos.workflow.controller.WorkFlowController">
+   <method old="approvalTask(Lcom/example/emos/workflow/controller/form/ApprovalTaskForm;)Lcom/example/emos/workflow/util/R;" new="approvalTask" s="146" e="156"/>
+   <method old="archiveTask(Lcom/example/emos/workflow/controller/form/ArchiveTaskForm;)Lcom/example/emos/workflow/util/R;" new="archiveTask" s="161" e="178"/>
+   <method old="checkCode(Ljava/lang/String;)Ljava/lang/String;" new="checkCode" s="326" e="334"/>
+   <method old="checkTcode(Ljava/lang/String;)Z" new="checkTcode" s="340" e="364"/>
+   <method old="deleteProcessById(Lcom/example/emos/workflow/controller/form/DeleteProcessByIdForm;)Lcom/example/emos/workflow/util/R;" new="deleteProcessById" s="208" e="215"/>
+   <method old="searchApprovalBpmn(Lcom/example/emos/workflow/controller/form/SearchApprovalBpmnForm;Ljavax/servlet/http/HttpServletResponse;)V" new="searchApprovalBpmn" s="266" e="306"/>
+   <method old="searchApprovalContent(Lcom/example/emos/workflow/controller/form/SearchApprovalContentForm;)Lcom/example/emos/workflow/util/R;" new="searchApprovalContent" s="254" e="261"/>
+   <method old="searchProcessStatus(Lcom/example/emos/workflow/controller/form/SearchProcessStatusForm;)Lcom/example/emos/workflow/util/R;" new="searchProcessStatus" s="186" e="199"/>
+   <method old="searchProcessUsers(Lcom/example/emos/workflow/controller/form/SearchProcessUsersForm;)Lcom/example/emos/workflow/util/R;" new="searchProcessUsers" s="224" e="231"/>
+   <method old="searchTaskByPage(Lcom/example/emos/workflow/controller/form/SearchTaskByPageForm;)Lcom/example/emos/workflow/util/R;" new="searchTaskByPage" s="236" e="249"/>
+   <method old="searchUserTaskListByPage(Lcom/example/emos/workflow/controller/form/SearchUserTaskListByPageForm;)Lcom/example/emos/workflow/util/R;" new="searchUserTaskListByPage" s="131" e="140"/>
+   <method old="startLeaveProcess(Lcom/example/emos/workflow/controller/form/StartLeaveProcessForm;)Lcom/example/emos/workflow/util/R;" new="startLeaveProcess" s="90" e="104"/>
+   <method old="startMeetingProcess(Lcom/example/emos/workflow/controller/form/StartMeetingProcessForm;)Lcom/example/emos/workflow/util/R;" new="startMeetingProcess" s="62" e="84"/>
+   <method old="startReimProcess(Lcom/example/emos/workflow/controller/form/StartReimProcessForm;)Lcom/example/emos/workflow/util/R;" new="startReimProcess" s="109" e="124"/>
+   <method old="turnTask(Lcom/example/emos/workflow/controller/form/TuneTaskForm;)Lcom/example/emos/workflow/util/R;" new="turnTask" s="315" e="322"/>
+   <field old="historyService Lorg/activiti/engine/HistoryService;" new="historyService"/>
+   <field old="processEngine Lorg/activiti/engine/ProcessEngine;" new="processEngine"/>
+   <field old="repositoryService Lorg/activiti/engine/RepositoryService;" new="repositoryService"/>
+   <field old="runtimeService Lorg/activiti/engine/RuntimeService;" new="runtimeService"/>
+   <field old="taskService Lorg/activiti/engine/TaskService;" new="taskService"/>
+   <field old="workflowService Lcom/example/emos/workflow/service/WorkflowService;" new="workflowService"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.form.TuneTaskForm" new="com.example.emos.workflow.controller.form.TuneTaskForm">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="10" e="10"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="10" e="10"/>
+   <method old="getAssigneeId()Ljava/lang/Integer;" new="getAssigneeId" s="19" e="19"/>
+   <method old="getCode()Ljava/lang/String;" new="getCode" s="26" e="26"/>
+   <method old="getTcode()Ljava/lang/String;" new="getTcode" s="23" e="23"/>
+   <method old="getUserId()Ljava/lang/Integer;" new="getUserId" s="15" e="15"/>
+   <method old="hashCode()I" new="hashCode" s="10" e="10"/>
+   <method old="setAssigneeId(Ljava/lang/Integer;)V" new="setAssigneeId" s="10" e="10"/>
+   <method old="setCode(Ljava/lang/String;)V" new="setCode" s="10" e="10"/>
+   <method old="setTcode(Ljava/lang/String;)V" new="setTcode" s="10" e="10"/>
+   <method old="setUserId(Ljava/lang/Integer;)V" new="setUserId" s="10" e="10"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="10" e="10"/>
+   <field old="assigneeId Ljava/lang/Integer;" new="assigneeId"/>
+   <field old="code Ljava/lang/String;" new="code"/>
+   <field old="tcode Ljava/lang/String;" new="tcode"/>
+   <field old="userId Ljava/lang/Integer;" new="userId"/>
+  </class>
+  <class old="com.example.emos.workflow.bpmn.NotifyMeetingService$1" new="com.example.emos.workflow.bpmn.NotifyMeetingService$1">
+   <field old="this$0 Lcom/example/emos/workflow/bpmn/NotifyMeetingService;" new="this$0"/>
+   <field old="val$uuid Ljava/lang/String;" new="val$uuid"/>
+  </class>
+  <class old="com.example.emos.workflow.bpmn.NotifyMeetingService$2" new="com.example.emos.workflow.bpmn.NotifyMeetingService$2">
+   <field old="this$0 Lcom/example/emos/workflow/bpmn/NotifyMeetingService;" new="this$0"/>
+   <field old="val$uuid Ljava/lang/String;" new="val$uuid"/>
+  </class>
+  <class old="com.example.emos.workflow.db.pojo.TbAmectType" new="com.example.emos.workflow.db.pojo.TbAmectType">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="ALLATORIxDEMO"/>
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="7" e="7"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="7" e="7"/>
+   <method old="getId()Ljava/lang/Integer;" new="getId" s="9" e="9"/>
+   <method old="getMoney()Ljava/math/BigDecimal;" new="getMoney" s="11" e="11"/>
+   <method old="getSystemic()Ljava/lang/Boolean;" new="getSystemic" s="12" e="12"/>
+   <method old="getType()Ljava/lang/String;" new="getType" s="10" e="10"/>
+   <method old="hashCode()I" new="hashCode" s="7" e="7"/>
+   <method old="setId(Ljava/lang/Integer;)V" new="setId" s="7" e="7"/>
+   <method old="setMoney(Ljava/math/BigDecimal;)V" new="setMoney" s="7" e="7"/>
+   <method old="setSystemic(Ljava/lang/Boolean;)V" new="setSystemic" s="7" e="7"/>
+   <method old="setType(Ljava/lang/String;)V" new="setType" s="7" e="7"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="7" e="7"/>
+   <field old="id Ljava/lang/Integer;" new="id"/>
+   <field old="money Ljava/math/BigDecimal;" new="money"/>
+   <field old="systemic Ljava/lang/Boolean;" new="systemic"/>
+   <field old="type Ljava/lang/String;" new="type"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.form.DeleteProcessByIdForm" new="com.example.emos.workflow.controller.form.DeleteProcessByIdForm">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="ALLATORIxDEMO"/>
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="9" e="9"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="9" e="9"/>
+   <method old="getCode()Ljava/lang/String;" new="getCode" s="21" e="21"/>
+   <method old="getInstanceId()Ljava/lang/String;" new="getInstanceId" s="12" e="12"/>
+   <method old="getReason()Ljava/lang/String;" new="getReason" s="18" e="18"/>
+   <method old="getTcode()Ljava/lang/String;" new="getTcode" s="27" e="27"/>
+   <method old="getType()Ljava/lang/String;" new="getType" s="15" e="15"/>
+   <method old="getUuid()Ljava/lang/String;" new="getUuid" s="23" e="23"/>
+   <method old="hashCode()I" new="hashCode" s="9" e="9"/>
+   <method old="setCode(Ljava/lang/String;)V" new="setCode" s="9" e="9"/>
+   <method old="setInstanceId(Ljava/lang/String;)V" new="setInstanceId" s="9" e="9"/>
+   <method old="setReason(Ljava/lang/String;)V" new="setReason" s="9" e="9"/>
+   <method old="setTcode(Ljava/lang/String;)V" new="setTcode" s="9" e="9"/>
+   <method old="setType(Ljava/lang/String;)V" new="setType" s="9" e="9"/>
+   <method old="setUuid(Ljava/lang/String;)V" new="setUuid" s="9" e="9"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="9" e="9"/>
+   <field old="code Ljava/lang/String;" new="code"/>
+   <field old="instanceId Ljava/lang/String;" new="instanceId"/>
+   <field old="reason Ljava/lang/String;" new="reason"/>
+   <field old="tcode Ljava/lang/String;" new="tcode"/>
+   <field old="type Ljava/lang/String;" new="type"/>
+   <field old="uuid Ljava/lang/String;" new="uuid"/>
+  </class>
+  <class old="com.example.emos.workflow.db.pojo.TbLeave" new="com.example.emos.workflow.db.pojo.TbLeave">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="7" e="7"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="7" e="7"/>
+   <method old="getCreateTime()Ljava/util/Date;" new="getCreateTime" s="18" e="18"/>
+   <method old="getDays()Ljava/lang/String;" new="getDays" s="14" e="14"/>
+   <method old="getEnd()Ljava/lang/String;" new="getEnd" s="13" e="13"/>
+   <method old="getId()Ljava/lang/Integer;" new="getId" s="9" e="9"/>
+   <method old="getInstanceId()Ljava/lang/String;" new="getInstanceId" s="17" e="17"/>
+   <method old="getReason()Ljava/lang/String;" new="getReason" s="11" e="11"/>
+   <method old="getStart()Ljava/lang/String;" new="getStart" s="12" e="12"/>
+   <method old="getStatus()Ljava/lang/Byte;" new="getStatus" s="16" e="16"/>
+   <method old="getType()Ljava/lang/Byte;" new="getType" s="15" e="15"/>
+   <method old="getUserId()Ljava/lang/Integer;" new="getUserId" s="10" e="10"/>
+   <method old="hashCode()I" new="hashCode" s="7" e="7"/>
+   <method old="setCreateTime(Ljava/util/Date;)V" new="setCreateTime" s="7" e="7"/>
+   <method old="setDays(Ljava/lang/String;)V" new="setDays" s="7" e="7"/>
+   <method old="setEnd(Ljava/lang/String;)V" new="setEnd" s="7" e="7"/>
+   <method old="setId(Ljava/lang/Integer;)V" new="setId" s="7" e="7"/>
+   <method old="setInstanceId(Ljava/lang/String;)V" new="setInstanceId" s="7" e="7"/>
+   <method old="setReason(Ljava/lang/String;)V" new="setReason" s="7" e="7"/>
+   <method old="setStart(Ljava/lang/String;)V" new="setStart" s="7" e="7"/>
+   <method old="setStatus(Ljava/lang/Byte;)V" new="setStatus" s="7" e="7"/>
+   <method old="setType(Ljava/lang/Byte;)V" new="setType" s="7" e="7"/>
+   <method old="setUserId(Ljava/lang/Integer;)V" new="setUserId" s="7" e="7"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="7" e="7"/>
+   <field old="createTime Ljava/util/Date;" new="createTime"/>
+   <field old="days Ljava/lang/String;" new="days"/>
+   <field old="end Ljava/lang/String;" new="end"/>
+   <field old="id Ljava/lang/Integer;" new="id"/>
+   <field old="instanceId Ljava/lang/String;" new="instanceId"/>
+   <field old="reason Ljava/lang/String;" new="reason"/>
+   <field old="start Ljava/lang/String;" new="start"/>
+   <field old="status Ljava/lang/Byte;" new="status"/>
+   <field old="type Ljava/lang/Byte;" new="type"/>
+   <field old="userId Ljava/lang/Integer;" new="userId"/>
+  </class>
+  <class old="com.example.emos.workflow.config.quartz.MeetingWorkflowJob" new="com.example.emos.workflow.config.quartz.MeetingWorkflowJob">
+   <method old="executeInternal(Lorg/quartz/JobExecutionContext;)V" new="executeInternal" s="45" e="59"/>
+   <field old="historyService Lorg/activiti/engine/HistoryService;" new="historyService"/>
+   <field old="log Lorg/slf4j/Logger;" new="log"/>
+   <field old="meetingService Lcom/example/emos/workflow/service/MeetingService;" new="meetingService"/>
+   <field old="runtimeService Lorg/activiti/engine/RuntimeService;" new="runtimeService"/>
+   <field old="workflowService Lcom/example/emos/workflow/service/WorkflowService;" new="workflowService"/>
+  </class>
+  <class old="com.example.emos.workflow.service.AmectService" new="com.example.emos.workflow.service.AmectService">
+   <method old="insert(Lcom/example/emos/workflow/db/pojo/TbAmect;)I" new="insert"/>
+  </class>
+  <class old="com.example.emos.workflow.bpmn.NotifyReimService$1" new="com.example.emos.workflow.bpmn.NotifyReimService$1">
+   <field old="this$0 Lcom/example/emos/workflow/bpmn/NotifyReimService;" new="this$0"/>
+   <field old="val$instanceId Ljava/lang/String;" new="val$instanceId"/>
+   <field old="val$result Ljava/lang/String;" new="val$result"/>
+  </class>
+  <class old="com.example.emos.workflow.service.ReimService" new="com.example.emos.workflow.service.ReimService">
+   <method old="searchReimByInstanceId(Ljava/lang/String;)Ljava/util/HashMap;" new="searchReimByInstanceId"/>
+  </class>
+  <class old="com.example.emos.workflow.service.impl.LeaveServiceImpl" new="com.example.emos.workflow.service.impl.LeaveServiceImpl">
+   <method old="searchLeaveByInstanceId(Ljava/lang/String;)Ljava/util/HashMap;" new="searchLeaveByInstanceId" s="17" e="18"/>
+   <field old="leaveDao Lcom/example/emos/workflow/db/dao/TbLeaveDao;" new="leaveDao"/>
+  </class>
+  <class old="com.example.emos.workflow.service.impl.AmectServiceImpl" new="com.example.emos.workflow.service.impl.AmectServiceImpl">
+   <method old="insert(Lcom/example/emos/workflow/db/pojo/TbAmect;)I" new="insert" s="16" e="17"/>
+   <field old="amectDao Lcom/example/emos/workflow/db/dao/TbAmectDao;" new="amectDao"/>
+  </class>
+  <class old="com.example.emos.workflow.service.MeetingService" new="com.example.emos.workflow.service.MeetingService">
+   <method old="searchMeetingByInstanceId(Ljava/lang/String;)Ljava/util/HashMap;" new="searchMeetingByInstanceId"/>
+   <method old="searchMeetingByUUID(Ljava/lang/String;)Ljava/util/HashMap;" new="searchMeetingByUUID"/>
+   <method old="searchMeetingUnpresent(Ljava/lang/String;)Ljava/util/ArrayList;" new="searchMeetingUnpresent"/>
+   <method old="searchRoomIdByUUID(Ljava/lang/String;)Ljava/lang/Long;" new="searchRoomIdByUUID"/>
+   <method old="searchUserMeetingInMonth(Ljava/util/HashMap;)Ljava/util/List;" new="searchUserMeetingInMonth"/>
+   <method old="updateMeetingStatus(Ljava/util/HashMap;)V" new="updateMeetingStatus"/>
+   <method old="updateMeetingUnpresent(Ljava/util/HashMap;)I" new="updateMeetingUnpresent"/>
+  </class>
+  <class old="com.example.emos.workflow.service.impl.WorkflowServiceImpl" new="com.example.emos.workflow.service.impl.WorkflowServiceImpl">
+   <method old="approvalTask(Ljava/util/HashMap;)V" new="approvalTask" s="168" e="172"/>
+   <method old="archiveTask(Ljava/util/HashMap;)V" new="archiveTask" s="176" e="185"/>
+   <method old="createApproval(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)Lcom/example/emos/workflow/bo/Approval;" new="createApproval" s="386" e="404"/>
+   <method old="deleteProcessById(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V" new="deleteProcessById" s="202" e="219"/>
+   <method old="lambda$searchProcessUsers$2(Ljava/util/ArrayList;Lorg/activiti/engine/history/HistoricTaskInstance;)V" new="lambda$searchProcessUsers$2" s="226" e="227"/>
+   <method old="lambda$searchTaskByPage$3(Ljava/util/List;Ljava/lang/Object;)V" new="lambda$searchTaskByPage$3" s="246" e="247"/>
+   <method old="lambda$searchUserTaskListByPage$0(Ljava/util/ArrayList;Lorg/activiti/engine/task/Task;)V" new="lambda$searchUserTaskListByPage$0" s="113" e="127"/>
+   <method old="lambda$searchUserTaskListByPage$1(Ljava/util/ArrayList;Lorg/activiti/engine/history/HistoricTaskInstance;)V" new="lambda$searchUserTaskListByPage$1" s="134" e="161"/>
+   <method old="lambda$turnTask$4(ILorg/activiti/engine/task/Task;)V" new="lambda$turnTask$4" s="380" e="382"/>
+   <method old="searchApprovalContent(Ljava/lang/String;I[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/HashMap;" new="searchApprovalContent" s="340" e="373"/>
+   <method old="searchProcessStatus(Ljava/lang/String;)Z" new="searchProcessStatus" s="190" e="196"/>
+   <method old="searchProcessUsers(Ljava/lang/String;)Ljava/util/ArrayList;" new="searchProcessUsers" s="223" e="228"/>
+   <method old="searchTaskByPage(Ljava/util/HashMap;)Ljava/util/HashMap;" new="searchTaskByPage" s="233" e="335"/>
+   <method old="searchUserTaskListByPage(Ljava/util/HashMap;)Ljava/util/ArrayList;" new="searchUserTaskListByPage" s="101" e="163"/>
+   <method old="startLeaveProcess(Ljava/util/HashMap;)Ljava/lang/String;" new="startLeaveProcess" s="89" e="90"/>
+   <method old="startMeetingProcess(Ljava/util/HashMap;)Ljava/lang/String;" new="startMeetingProcess" s="66" e="84"/>
+   <method old="startReimProcess(Ljava/util/HashMap;)Ljava/lang/String;" new="startReimProcess" s="95" e="96"/>
+   <method old="turnTask(II)V" new="turnTask" s="378" e="383"/>
+   <field old="historyService Lorg/activiti/engine/HistoryService;" new="historyService"/>
+   <field old="kieSession Lorg/kie/api/runtime/KieSession;" new="kieSession"/>
+   <field old="leaveService Lcom/example/emos/workflow/service/LeaveService;" new="leaveService"/>
+   <field old="meetingService Lcom/example/emos/workflow/service/MeetingService;" new="meetingService"/>
+   <field old="processEngine Lorg/activiti/engine/ProcessEngine;" new="processEngine"/>
+   <field old="quartzUtil Lcom/example/emos/workflow/config/quartz/QuartzUtil;" new="quartzUtil"/>
+   <field old="reimService Lcom/example/emos/workflow/service/ReimService;" new="reimService"/>
+   <field old="runtimeService Lorg/activiti/engine/RuntimeService;" new="runtimeService"/>
+   <field old="taskService Lorg/activiti/engine/TaskService;" new="taskService"/>
+  </class>
+  <class old="com.example.emos.workflow.db.pojo.TbAmect" new="com.example.emos.workflow.db.pojo.TbAmect">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="8" e="8"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="8" e="8"/>
+   <method old="getAmount()Ljava/math/BigDecimal;" new="getAmount" s="13" e="13"/>
+   <method old="getCreateTime()Ljava/util/Date;" new="getCreateTime" s="18" e="18"/>
+   <method old="getId()Ljava/lang/Integer;" new="getId" s="10" e="10"/>
+   <method old="getPrepayId()Ljava/lang/String;" new="getPrepayId" s="16" e="16"/>
+   <method old="getReason()Ljava/lang/String;" new="getReason" s="15" e="15"/>
+   <method old="getStatus()Ljava/lang/Byte;" new="getStatus" s="17" e="17"/>
+   <method old="getTypeId()Ljava/lang/Integer;" new="getTypeId" s="14" e="14"/>
+   <method old="getUserId()Ljava/lang/Integer;" new="getUserId" s="12" e="12"/>
+   <method old="getUuid()Ljava/lang/String;" new="getUuid" s="11" e="11"/>
+   <method old="hashCode()I" new="hashCode" s="8" e="8"/>
+   <method old="setAmount(Ljava/math/BigDecimal;)V" new="setAmount" s="8" e="8"/>
+   <method old="setCreateTime(Ljava/util/Date;)V" new="setCreateTime" s="8" e="8"/>
+   <method old="setId(Ljava/lang/Integer;)V" new="setId" s="8" e="8"/>
+   <method old="setPrepayId(Ljava/lang/String;)V" new="setPrepayId" s="8" e="8"/>
+   <method old="setReason(Ljava/lang/String;)V" new="setReason" s="8" e="8"/>
+   <method old="setStatus(Ljava/lang/Byte;)V" new="setStatus" s="8" e="8"/>
+   <method old="setTypeId(Ljava/lang/Integer;)V" new="setTypeId" s="8" e="8"/>
+   <method old="setUserId(Ljava/lang/Integer;)V" new="setUserId" s="8" e="8"/>
+   <method old="setUuid(Ljava/lang/String;)V" new="setUuid" s="8" e="8"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="8" e="8"/>
+   <field old="amount Ljava/math/BigDecimal;" new="amount"/>
+   <field old="createTime Ljava/util/Date;" new="createTime"/>
+   <field old="id Ljava/lang/Integer;" new="id"/>
+   <field old="prepayId Ljava/lang/String;" new="prepayId"/>
+   <field old="reason Ljava/lang/String;" new="reason"/>
+   <field old="status Ljava/lang/Byte;" new="status"/>
+   <field old="typeId Ljava/lang/Integer;" new="typeId"/>
+   <field old="userId Ljava/lang/Integer;" new="userId"/>
+   <field old="uuid Ljava/lang/String;" new="uuid"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.form.StartReimProcessForm" new="com.example.emos.workflow.controller.form.StartReimProcessForm">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="10" e="10"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="10" e="10"/>
+   <method old="getCode()Ljava/lang/String;" new="getCode" s="36" e="36"/>
+   <method old="getCreatorId()Ljava/lang/Integer;" new="getCreatorId" s="14" e="14"/>
+   <method old="getCreatorName()Ljava/lang/String;" new="getCreatorName" s="18" e="18"/>
+   <method old="getGmId()Ljava/lang/Integer;" new="getGmId" s="26" e="26"/>
+   <method old="getManagerId()Ljava/lang/Integer;" new="getManagerId" s="30" e="30"/>
+   <method old="getTcode()Ljava/lang/String;" new="getTcode" s="40" e="40"/>
+   <method old="getTitle()Ljava/lang/String;" new="getTitle" s="22" e="22"/>
+   <method old="getUrl()Ljava/lang/String;" new="getUrl" s="33" e="33"/>
+   <method old="hashCode()I" new="hashCode" s="10" e="10"/>
+   <method old="setCode(Ljava/lang/String;)V" new="setCode" s="10" e="10"/>
+   <method old="setCreatorId(Ljava/lang/Integer;)V" new="setCreatorId" s="10" e="10"/>
+   <method old="setCreatorName(Ljava/lang/String;)V" new="setCreatorName" s="10" e="10"/>
+   <method old="setGmId(Ljava/lang/Integer;)V" new="setGmId" s="10" e="10"/>
+   <method old="setManagerId(Ljava/lang/Integer;)V" new="setManagerId" s="10" e="10"/>
+   <method old="setTcode(Ljava/lang/String;)V" new="setTcode" s="10" e="10"/>
+   <method old="setTitle(Ljava/lang/String;)V" new="setTitle" s="10" e="10"/>
+   <method old="setUrl(Ljava/lang/String;)V" new="setUrl" s="10" e="10"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="10" e="10"/>
+   <field old="code Ljava/lang/String;" new="code"/>
+   <field old="creatorId Ljava/lang/Integer;" new="creatorId"/>
+   <field old="creatorName Ljava/lang/String;" new="creatorName"/>
+   <field old="gmId Ljava/lang/Integer;" new="gmId"/>
+   <field old="managerId Ljava/lang/Integer;" new="managerId"/>
+   <field old="tcode Ljava/lang/String;" new="tcode"/>
+   <field old="title Ljava/lang/String;" new="title"/>
+   <field old="url Ljava/lang/String;" new="url"/>
+  </class>
+  <class old="com.example.emos.workflow.bo.Approval" new="com.example.emos.workflow.bo.Approval">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="5" e="5"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="5" e="5"/>
+   <method old="getCreateDate()Ljava/lang/String;" new="getCreateDate" s="12" e="12"/>
+   <method old="getCreatorName()Ljava/lang/String;" new="getCreatorName" s="11" e="11"/>
+   <method old="getProcessId()Ljava/lang/String;" new="getProcessId" s="7" e="7"/>
+   <method old="getResult()Ljava/lang/String;" new="getResult" s="14" e="14"/>
+   <method old="getStatus()Ljava/lang/String;" new="getStatus" s="13" e="13"/>
+   <method old="getTaskId()Ljava/lang/String;" new="getTaskId" s="8" e="8"/>
+   <method old="getTitle()Ljava/lang/String;" new="getTitle" s="9" e="9"/>
+   <method old="getType()Ljava/lang/String;" new="getType" s="10" e="10"/>
+   <method old="hashCode()I" new="hashCode" s="5" e="5"/>
+   <method old="isFiling()Z" new="isFiling" s="15" e="15"/>
+   <method old="setCreateDate(Ljava/lang/String;)V" new="setCreateDate" s="5" e="5"/>
+   <method old="setCreatorName(Ljava/lang/String;)V" new="setCreatorName" s="5" e="5"/>
+   <method old="setFiling(Z)V" new="setFiling" s="5" e="5"/>
+   <method old="setProcessId(Ljava/lang/String;)V" new="setProcessId" s="5" e="5"/>
+   <method old="setResult(Ljava/lang/String;)V" new="setResult" s="5" e="5"/>
+   <method old="setStatus(Ljava/lang/String;)V" new="setStatus" s="5" e="5"/>
+   <method old="setTaskId(Ljava/lang/String;)V" new="setTaskId" s="5" e="5"/>
+   <method old="setTitle(Ljava/lang/String;)V" new="setTitle" s="5" e="5"/>
+   <method old="setType(Ljava/lang/String;)V" new="setType" s="5" e="5"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="5" e="5"/>
+   <field old="createDate Ljava/lang/String;" new="createDate"/>
+   <field old="creatorName Ljava/lang/String;" new="creatorName"/>
+   <field old="filing Z" new="filing"/>
+   <field old="processId Ljava/lang/String;" new="processId"/>
+   <field old="result Ljava/lang/String;" new="result"/>
+   <field old="status Ljava/lang/String;" new="status"/>
+   <field old="taskId Ljava/lang/String;" new="taskId"/>
+   <field old="title Ljava/lang/String;" new="title"/>
+   <field old="type Ljava/lang/String;" new="type"/>
+  </class>
+  <class old="com.example.emos.workflow.db.dao.TbAmectTypeDao" new="com.example.emos.workflow.db.dao.TbAmectTypeDao">
+   <method old="searchByType(Ljava/lang/String;)Ljava/util/HashMap;" new="searchByType"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.form.ApprovalTaskForm" new="com.example.emos.workflow.controller.form.ApprovalTaskForm">
+   <method old="AllatoriDecryptString(Ljava/lang/String;)Ljava/lang/String;" new="ALLATORIxDEMO"/>
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="8" e="8"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="8" e="8"/>
+   <method old="getApproval()Ljava/lang/String;" new="getApproval" s="16" e="16"/>
+   <method old="getCode()Ljava/lang/String;" new="getCode" s="19" e="19"/>
+   <method old="getTaskId()Ljava/lang/String;" new="getTaskId" s="12" e="12"/>
+   <method old="getTcode()Ljava/lang/String;" new="getTcode" s="23" e="23"/>
+   <method old="hashCode()I" new="hashCode" s="8" e="8"/>
+   <method old="setApproval(Ljava/lang/String;)V" new="setApproval" s="8" e="8"/>
+   <method old="setCode(Ljava/lang/String;)V" new="setCode" s="8" e="8"/>
+   <method old="setTaskId(Ljava/lang/String;)V" new="setTaskId" s="8" e="8"/>
+   <method old="setTcode(Ljava/lang/String;)V" new="setTcode" s="8" e="8"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="8" e="8"/>
+   <field old="approval Ljava/lang/String;" new="approval"/>
+   <field old="code Ljava/lang/String;" new="code"/>
+   <field old="taskId Ljava/lang/String;" new="taskId"/>
+   <field old="tcode Ljava/lang/String;" new="tcode"/>
+  </class>
+  <class old="com.example.emos.workflow.db.dao.TbLeaveDao" new="com.example.emos.workflow.db.dao.TbLeaveDao">
+   <method old="searchLeaveByInstanceId(Ljava/lang/String;)Ljava/util/HashMap;" new="searchLeaveByInstanceId"/>
+   <method old="updateLeaveStatus(Ljava/util/HashMap;)I" new="updateLeaveStatus"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.form.SearchProcessUsersForm" new="com.example.emos.workflow.controller.form.SearchProcessUsersForm">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="8" e="8"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="8" e="8"/>
+   <method old="getCode()Ljava/lang/String;" new="getCode" s="14" e="14"/>
+   <method old="getInstanceId()Ljava/lang/String;" new="getInstanceId" s="11" e="11"/>
+   <method old="getTcode()Ljava/lang/String;" new="getTcode" s="18" e="18"/>
+   <method old="hashCode()I" new="hashCode" s="8" e="8"/>
+   <method old="setCode(Ljava/lang/String;)V" new="setCode" s="8" e="8"/>
+   <method old="setInstanceId(Ljava/lang/String;)V" new="setInstanceId" s="8" e="8"/>
+   <method old="setTcode(Ljava/lang/String;)V" new="setTcode" s="8" e="8"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="8" e="8"/>
+   <field old="code Ljava/lang/String;" new="code"/>
+   <field old="instanceId Ljava/lang/String;" new="instanceId"/>
+   <field old="tcode Ljava/lang/String;" new="tcode"/>
+  </class>
+  <class old="com.example.emos.workflow.config.WebSecurityConfig" new="com.example.emos.workflow.config.WebSecurityConfig">
+   <method old="configure(Lorg/springframework/security/config/annotation/web/builders/HttpSecurity;)V" new="configure" s="14" e="18"/>
+  </class>
+  <class old="com.example.emos.workflow.controller.form.SearchTaskByPageForm" new="com.example.emos.workflow.controller.form.SearchTaskByPageForm">
+   <method old="canEqual(Ljava/lang/Object;)Z" new="canEqual" s="8" e="8"/>
+   <method old="equals(Ljava/lang/Object;)Z" new="equals" s="8" e="8"/>
+   <method old="getCode()Ljava/lang/String;" new="getCode" s="40" e="40"/>
+   <method old="getCreatorName()Ljava/lang/String;" new="getCreatorName" s="34" e="34"/>
+   <method old="getInstanceId()Ljava/lang/String;" new="getInstanceId" s="37" e="37"/>
+   <method old="getLength()Ljava/lang/Integer;" new="getLength" s="24" e="24"/>
+   <method old="getPage()Ljava/lang/Integer;" new="getPage" s="20" e="20"/>
+   <method old="getRole()[Ljava/lang/String;" new="getRole" s="16" e="16"/>
+   <method old="getStatus()Ljava/lang/String;" new="getStatus" s="31" e="31"/>
+   <method old="getTcode()Ljava/lang/String;" new="getTcode" s="44" e="44"/>
+   <method old="getType()Ljava/lang/String;" new="getType" s="27" e="27"/>
+   <method old="getUserId()Ljava/lang/Integer;" new="getUserId" s="13" e="13"/>
+   <method old="hashCode()I" new="hashCode" s="8" e="8"/>
+   <method old="setCode(Ljava/lang/String;)V" new="setCode" s="8" e="8"/>
+   <method old="setCreatorName(Ljava/lang/String;)V" new="setCreatorName" s="8" e="8"/>
+   <method old="setInstanceId(Ljava/lang/String;)V" new="setInstanceId" s="8" e="8"/>
+   <method old="setLength(Ljava/lang/Integer;)V" new="setLength" s="8" e="8"/>
+   <method old="setPage(Ljava/lang/Integer;)V" new="setPage" s="8" e="8"/>
+   <method old="setRole([Ljava/lang/String;)V" new="setRole" s="8" e="8"/>
+   <method old="setStatus(Ljava/lang/String;)V" new="setStatus" s="8" e="8"/>
+   <method old="setTcode(Ljava/lang/String;)V" new="setTcode" s="8" e="8"/>
+   <method old="setType(Ljava/lang/String;)V" new="setType" s="8" e="8"/>
+   <method old="setUserId(Ljava/lang/Integer;)V" new="setUserId" s="8" e="8"/>
+   <method old="toString()Ljava/lang/String;" new="toString" s="8" e="8"/>
+   <field old="code Ljava/lang/String;" new="code"/>
+   <field old="creatorName Ljava/lang/String;" new="creatorName"/>
+   <field old="instanceId Ljava/lang/String;" new="instanceId"/>
+   <field old="length Ljava/lang/Integer;" new="length"/>
+   <field old="page Ljava/lang/Integer;" new="page"/>
+   <field old="role [Ljava/lang/String;" new="role"/>
+   <field old="status Ljava/lang/String;" new="status"/>
+   <field old="tcode Ljava/lang/String;" new="tcode"/>
+   <field old="type Ljava/lang/String;" new="type"/>
+   <field old="userId Ljava/lang/Integer;" new="userId"/>
+  </class>
+  <class old="com.example.emos.workflow.config.quartz.MeetingStatusJob" new="com.example.emos.workflow.config.quartz.MeetingStatusJob">
+   <method old="executeInternal(Lorg/quartz/JobExecutionContext;)V" new="executeInternal" s="39" e="86"/>
+   <method old="lambda$executeInternal$0(Lcn/hutool/json/JSONArray;Ljava/lang/Integer;)V" new="lambda$executeInternal$0" s="61" e="62"/>
+   <method old="lambda$executeInternal$1(Lcom/example/emos/workflow/db/pojo/TbAmect;Ljava/lang/Integer;)V" new="lambda$executeInternal$1" s="80" e="83"/>
+   <field old="amectService Lcom/example/emos/workflow/service/AmectService;" new="amectService"/>
+   <field old="amectTypeService Lcom/example/emos/workflow/service/AmectTypeService;" new="amectTypeService"/>
+   <field old="log Lorg/slf4j/Logger;" new="log"/>
+   <field old="meetingService Lcom/example/emos/workflow/service/MeetingService;" new="meetingService"/>
+  </class>
+  <class old="com.example.emos.workflow.bpmn.NotifyMeetingService" new="com.example.emos.workflow.bpmn.NotifyMeetingService">
+   <method old="execute(Lorg/activiti/engine/delegate/DelegateExecution;)V" new="execute" s="37" e="115"/>
+   <field old="log Lorg/slf4j/Logger;" new="log"/>
+   <field old="meetingService Lcom/example/emos/workflow/service/MeetingService;" new="meetingService"/>
+   <field old="quartzUtil Lcom/example/emos/workflow/config/quartz/QuartzUtil;" new="quartzUtil"/>
+  </class>
+  <sources>
+   <source old="EmosWorkflowApplication.java" new="ab"/>
+   <source old="Approval.java" new="wb"/>
+   <source old="NotifyLeaveService.java" new="ia"/>
+   <source old="NotifyMeetingService.java" new="pa"/>
+   <source old="NotifyReimService.java" new="aa"/>
+   <source old="DroolsConfiguration.java" new="la"/>
+   <source old="ExceptionAdvice.java" new="ca"/>
+   <source old="ThreadPoolConfig.java" new="ha"/>
+   <source old="WebSecurityConfig.java" new="ua"/>
+   <source old="MeetingStatusJob.java" new="ba"/>
+   <source old="MeetingWorkflowJob.java" new="ra"/>
+   <source old="QuartzUtil.java" new="ta"/>
+   <source old="WorkFlowController.java" new="za"/>
+   <source old="ApprovalTaskForm.java" new="oa"/>
+   <source old="ArchiveTaskForm.java" new="na"/>
+   <source old="DeleteProcessByIdForm.java" new="ea"/>
+   <source old="SearchApprovalBpmnForm.java" new="xa"/>
+   <source old="SearchApprovalContentForm.java" new="sa"/>
+   <source old="SearchProcessStatusForm.java" new="ma"/>
+   <source old="SearchProcessUsersForm.java" new="ka"/>
+   <source old="SearchTaskByPageForm.java" new="da"/>
+   <source old="SearchUserTaskListByPageForm.java" new="qa"/>
+   <source old="StartLeaveProcessForm.java" new="ja"/>
+   <source old="StartMeetingProcessForm.java" new="ga"/>
+   <source old="StartReimProcessForm.java" new="va"/>
+   <source old="StopProcessForm.java" new="fa"/>
+   <source old="TuneTaskForm.java" new="wa"/>
+   <source old="TbAmect.java" new="ya"/>
+   <source old="TbAmectType.java" new="e"/>
+   <source old="TbLeave.java" new="b"/>
+   <source old="TbMeeting.java" new="o"/>
+   <source old="TbReim.java" new="h"/>
+   <source old="TbUser.java" new="q"/>
+   <source old="EmosException.java" new="n"/>
+   <source old="AmectServiceImpl.java" new="x"/>
+   <source old="AmectTypeServiceImpl.java" new="s"/>
+   <source old="LeaveServiceImpl.java" new="w"/>
+   <source old="MeetingServiceImpl.java" new="k"/>
+   <source old="ReimServiceImpl.java" new="d"/>
+   <source old="WorkflowServiceImpl.java" new="i"/>
+   <source old="EmailTask.java" new="t"/>
+   <source old="R.java" new="z"/>
+   <source old="TbAmectDao.java" new="u"/>
+   <source old="TbAmectTypeDao.java" new="g"/>
+   <source old="TbLeaveDao.java" new="v"/>
+   <source old="TbMeetingDao.java" new="l"/>
+   <source old="TbReimDao.java" new="r"/>
+   <source old="TbUserDao.java" new="c"/>
+   <source old="AmectService.java" new="p"/>
+   <source old="AmectTypeService.java" new="a"/>
+   <source old="LeaveService.java" new="f"/>
+   <source old="MeetingService.java" new="m"/>
+   <source old="ReimService.java" new="y"/>
+   <source old="WorkflowService.java" new="j"/>
+  </sources>
+  <lines>
+   <line l="208"/>
+   <line l="94"/>
+   <line l="152"/>
+   <line l="163"/>
+   <line l="108"/>
+   <line l="19"/>
+   <line l="189"/>
+   <line l="147"/>
+   <line l="199"/>
+   <line l="88"/>
+   <line l="188"/>
+   <line l="200"/>
+   <line l="78"/>
+   <line l="93"/>
+   <line l="139"/>
+   <line l="4"/>
+   <line l="133"/>
+   <line l="125"/>
+   <line l="179"/>
+   <line l="186"/>
+   <line l="38"/>
+   <line l="46"/>
+   <line l="190"/>
+   <line l="116"/>
+   <line l="185"/>
+   <line l="50"/>
+   <line l="216"/>
+   <line l="115"/>
+   <line l="92"/>
+   <line l="130"/>
+   <line l="16"/>
+   <line l="0"/>
+   <line l="22"/>
+   <line l="213"/>
+   <line l="54"/>
+   <line l="210"/>
+   <line l="111"/>
+   <line l="209"/>
+   <line l="131"/>
+   <line l="169"/>
+   <line l="69"/>
+   <line l="25"/>
+   <line l="87"/>
+   <line l="176"/>
+   <line l="194"/>
+   <line l="84"/>
+   <line l="177"/>
+   <line l="184"/>
+   <line l="91"/>
+   <line l="27"/>
+   <line l="37"/>
+   <line l="123"/>
+   <line l="29"/>
+   <line l="44"/>
+   <line l="154"/>
+   <line l="217"/>
+   <line l="48"/>
+   <line l="49"/>
+   <line l="28"/>
+   <line l="89"/>
+   <line l="20"/>
+   <line l="32"/>
+   <line l="140"/>
+   <line l="164"/>
+   <line l="124"/>
+   <line l="13"/>
+   <line l="83"/>
+   <line l="100"/>
+   <line l="150"/>
+   <line l="175"/>
+   <line l="24"/>
+   <line l="65"/>
+   <line l="192"/>
+   <line l="173"/>
+   <line l="56"/>
+   <line l="9"/>
+   <line l="205"/>
+   <line l="128"/>
+   <line l="149"/>
+   <line l="14"/>
+   <line l="126"/>
+   <line l="76"/>
+   <line l="187"/>
+   <line l="119"/>
+   <line l="15"/>
+   <line l="5"/>
+   <line l="8"/>
+   <line l="71"/>
+   <line l="11"/>
+   <line l="211"/>
+   <line l="141"/>
+   <line l="35"/>
+   <line l="120"/>
+   <line l="103"/>
+   <line l="58"/>
+   <line l="181"/>
+   <line l="70"/>
+   <line l="171"/>
+   <line l="98"/>
+   <line l="151"/>
+   <line l="104"/>
+   <line l="143"/>
+   <line l="21"/>
+   <line l="86"/>
+   <line l="3"/>
+   <line l="214"/>
+   <line l="165"/>
+   <line l="191"/>
+   <line l="135"/>
+   <line l="53"/>
+   <line l="198"/>
+   <line l="168"/>
+   <line l="178"/>
+   <line l="159"/>
+   <line l="101"/>
+   <line l="121"/>
+   <line l="57"/>
+   <line l="40"/>
+   <line l="59"/>
+   <line l="197"/>
+   <line l="158"/>
+   <line l="195"/>
+   <line l="31"/>
+   <line l="67"/>
+   <line l="193"/>
+   <line l="99"/>
+   <line l="66"/>
+   <line l="170"/>
+   <line l="62"/>
+   <line l="106"/>
+   <line l="30"/>
+   <line l="201"/>
+   <line l="17"/>
+   <line l="6"/>
+   <line l="55"/>
+   <line l="39"/>
+   <line l="97"/>
+   <line l="77"/>
+   <line l="60"/>
+   <line l="145"/>
+   <line l="183"/>
+   <line l="166"/>
+   <line l="142"/>
+   <line l="61"/>
+   <line l="156"/>
+   <line l="203"/>
+   <line l="110"/>
+   <line l="7"/>
+   <line l="182"/>
+   <line l="105"/>
+   <line l="68"/>
+   <line l="206"/>
+   <line l="95"/>
+   <line l="73"/>
+   <line l="72"/>
+   <line l="107"/>
+   <line l="34"/>
+   <line l="155"/>
+   <line l="51"/>
+   <line l="63"/>
+   <line l="136"/>
+   <line l="26"/>
+   <line l="33"/>
+   <line l="172"/>
+   <line l="1"/>
+   <line l="207"/>
+   <line l="112"/>
+   <line l="80"/>
+   <line l="118"/>
+   <line l="204"/>
+   <line l="74"/>
+   <line l="113"/>
+   <line l="196"/>
+   <line l="148"/>
+   <line l="18"/>
+   <line l="43"/>
+   <line l="138"/>
+   <line l="42"/>
+   <line l="23"/>
+   <line l="75"/>
+   <line l="157"/>
+   <line l="36"/>
+   <line l="129"/>
+   <line l="146"/>
+   <line l="52"/>
+   <line l="144"/>
+   <line l="174"/>
+   <line l="41"/>
+   <line l="167"/>
+   <line l="127"/>
+   <line l="45"/>
+   <line l="85"/>
+   <line l="109"/>
+   <line l="137"/>
+   <line l="96"/>
+   <line l="132"/>
+   <line l="10"/>
+   <line l="12"/>
+   <line l="90"/>
+   <line l="79"/>
+   <line l="212"/>
+   <line l="81"/>
+   <line l="134"/>
+   <line l="202"/>
+   <line l="153"/>
+   <line l="161"/>
+   <line l="117"/>
+   <line l="162"/>
+   <line l="160"/>
+   <line l="122"/>
+   <line l="47"/>
+   <line l="64"/>
+   <line l="180"/>
+   <line l="215"/>
+   <line l="114"/>
+   <line l="102"/>
+   <line l="82"/>
+   <line l="2"/>
+   <line l="257"/>
+   <line l="287"/>
+   <line l="463"/>
+   <line l="551"/>
+   <line l="451"/>
+   <line l="409"/>
+   <line l="413"/>
+   <line l="408"/>
+   <line l="303"/>
+   <line l="310"/>
+   <line l="399"/>
+   <line l="245"/>
+   <line l="471"/>
+   <line l="274"/>
+   <line l="430"/>
+   <line l="383"/>
+   <line l="537"/>
+   <line l="306"/>
+   <line l="422"/>
+   <line l="556"/>
+   <line l="298"/>
+   <line l="525"/>
+   <line l="435"/>
+   <line l="450"/>
+   <line l="531"/>
+   <line l="465"/>
+   <line l="473"/>
+   <line l="225"/>
+   <line l="544"/>
+   <line l="560"/>
+   <line l="286"/>
+   <line l="251"/>
+   <line l="317"/>
+   <line l="371"/>
+   <line l="285"/>
+   <line l="567"/>
+   <line l="570"/>
+   <line l="431"/>
+   <line l="249"/>
+   <line l="266"/>
+   <line l="282"/>
+   <line l="418"/>
+   <line l="314"/>
+   <line l="244"/>
+   <line l="577"/>
+   <line l="552"/>
+   <line l="513"/>
+   <line l="362"/>
+   <line l="325"/>
+   <line l="256"/>
+   <line l="493"/>
+   <line l="239"/>
+   <line l="441"/>
+   <line l="483"/>
+   <line l="233"/>
+   <line l="396"/>
+   <line l="243"/>
+   <line l="407"/>
+   <line l="232"/>
+   <line l="297"/>
+   <line l="539"/>
+   <line l="501"/>
+   <line l="404"/>
+   <line l="477"/>
+   <line l="387"/>
+   <line l="492"/>
+   <line l="417"/>
+   <line l="394"/>
+   <line l="548"/>
+   <line l="319"/>
+   <line l="302"/>
+   <line l="241"/>
+   <line l="549"/>
+   <line l="480"/>
+   <line l="490"/>
+   <line l="284"/>
+   <line l="414"/>
+   <line l="458"/>
+   <line l="452"/>
+   <line l="475"/>
+   <line l="573"/>
+   <line l="312"/>
+   <line l="357"/>
+   <line l="468"/>
+   <line l="381"/>
+   <line l="351"/>
+   <line l="437"/>
+   <line l="558"/>
+   <line l="508"/>
+   <line l="385"/>
+   <line l="504"/>
+   <line l="270"/>
+   <line l="517"/>
+   <line l="445"/>
+   <line l="446"/>
+   <line l="367"/>
+   <line l="550"/>
+   <line l="415"/>
+   <line l="419"/>
+   <line l="472"/>
+   <line l="272"/>
+   <line l="397"/>
+   <line l="514"/>
+   <line l="341"/>
+   <line l="254"/>
+   <line l="454"/>
+   <line l="553"/>
+   <line l="579"/>
+   <line l="547"/>
+   <line l="581"/>
+   <line l="356"/>
+   <line l="347"/>
+   <line l="538"/>
+   <line l="438"/>
+   <line l="416"/>
+   <line l="375"/>
+   <line l="520"/>
+   <line l="294"/>
+   <line l="440"/>
+   <line l="345"/>
+   <line l="512"/>
+   <line l="230"/>
+   <line l="348"/>
+   <line l="373"/>
+   <line l="224"/>
+   <line l="293"/>
+   <line l="448"/>
+   <line l="388"/>
+   <line l="372"/>
+   <line l="392"/>
+   <line l="327"/>
+   <line l="424"/>
+   <line l="487"/>
+   <line l="236"/>
+   <line l="328"/>
+   <line l="527"/>
+   <line l="516"/>
+   <line l="453"/>
+   <line l="456"/>
+   <line l="295"/>
+   <line l="541"/>
+   <line l="366"/>
+   <line l="496"/>
+   <line l="339"/>
+   <line l="499"/>
+   <line l="273"/>
+   <line l="384"/>
+   <line l="335"/>
+   <line l="423"/>
+   <line l="401"/>
+   <line l="331"/>
+   <line l="265"/>
+   <line l="460"/>
+   <line l="400"/>
+   <line l="240"/>
+   <line l="305"/>
+   <line l="457"/>
+   <line l="344"/>
+   <line l="523"/>
+   <line l="288"/>
+   <line l="374"/>
+   <line l="564"/>
+   <line l="377"/>
+   <line l="439"/>
+   <line l="486"/>
+   <line l="246"/>
+   <line l="554"/>
+   <line l="557"/>
+   <line l="495"/>
+   <line l="292"/>
+   <line l="364"/>
+   <line l="575"/>
+   <line l="321"/>
+   <line l="296"/>
+   <line l="498"/>
+   <line l="421"/>
+   <line l="474"/>
+   <line l="253"/>
+   <line l="337"/>
+   <line l="300"/>
+   <line l="402"/>
+   <line l="428"/>
+   <line l="262"/>
+   <line l="395"/>
+   <line l="311"/>
+   <line l="219"/>
+   <line l="524"/>
+   <line l="350"/>
+   <line l="561"/>
+   <line l="559"/>
+   <line l="478"/>
+   <line l="494"/>
+   <line l="449"/>
+   <line l="330"/>
+   <line l="248"/>
+   <line l="506"/>
+   <line l="476"/>
+   <line l="334"/>
+   <line l="569"/>
+   <line l="229"/>
+   <line l="576"/>
+   <line l="343"/>
+   <line l="442"/>
+   <line l="227"/>
+   <line l="406"/>
+   <line l="316"/>
+   <line l="332"/>
+   <line l="361"/>
+   <line l="572"/>
+   <line l="291"/>
+   <line l="391"/>
+   <line l="238"/>
+   <line l="268"/>
+   <line l="280"/>
+   <line l="231"/>
+   <line l="304"/>
+   <line l="389"/>
+   <line l="378"/>
+   <line l="479"/>
+   <line l="307"/>
+   <line l="289"/>
+   <line l="528"/>
+   <line l="540"/>
+   <line l="433"/>
+   <line l="354"/>
+   <line l="329"/>
+   <line l="443"/>
+   <line l="309"/>
+   <line l="410"/>
+   <line l="338"/>
+   <line l="568"/>
+   <line l="252"/>
+   <line l="222"/>
+   <line l="521"/>
+   <line l="260"/>
+   <line l="427"/>
+   <line l="485"/>
+   <line l="237"/>
+   <line l="259"/>
+   <line l="571"/>
+   <line l="223"/>
+   <line l="247"/>
+   <line l="336"/>
+   <line l="482"/>
+   <line l="380"/>
+   <line l="509"/>
+   <line l="403"/>
+   <line l="505"/>
+   <line l="470"/>
+   <line l="324"/>
+   <line l="261"/>
+   <line l="318"/>
+   <line l="218"/>
+   <line l="360"/>
+   <line l="258"/>
+   <line l="469"/>
+   <line l="333"/>
+   <line l="434"/>
+   <line l="355"/>
+   <line l="429"/>
+   <line l="301"/>
+   <line l="511"/>
+   <line l="412"/>
+   <line l="320"/>
+   <line l="535"/>
+   <line l="582"/>
+   <line l="522"/>
+   <line l="420"/>
+   <line l="369"/>
+   <line l="444"/>
+   <line l="489"/>
+   <line l="278"/>
+   <line l="542"/>
+   <line l="507"/>
+   <line l="235"/>
+   <line l="290"/>
+   <line l="502"/>
+   <line l="279"/>
+   <line l="464"/>
+   <line l="488"/>
+   <line l="368"/>
+   <line l="353"/>
+   <line l="342"/>
+   <line l="526"/>
+   <line l="398"/>
+   <line l="277"/>
+   <line l="503"/>
+   <line l="519"/>
+   <line l="500"/>
+   <line l="379"/>
+   <line l="484"/>
+   <line l="322"/>
+   <line l="578"/>
+   <line l="491"/>
+   <line l="267"/>
+   <line l="447"/>
+   <line l="264"/>
+   <line l="432"/>
+   <line l="455"/>
+   <line l="220"/>
+   <line l="530"/>
+   <line l="326"/>
+   <line l="359"/>
+   <line l="566"/>
+   <line l="555"/>
+   <line l="543"/>
+   <line l="365"/>
+   <line l="563"/>
+   <line l="315"/>
+   <line l="426"/>
+   <line l="562"/>
+   <line l="349"/>
+   <line l="461"/>
+   <line l="234"/>
+   <line l="281"/>
+   <line l="497"/>
+   <line l="411"/>
+   <line l="390"/>
+   <line l="533"/>
+   <line l="263"/>
+   <line l="358"/>
+   <line l="565"/>
+   <line l="529"/>
+   <line l="283"/>
+   <line l="405"/>
+   <line l="467"/>
+   <line l="228"/>
+   <line l="226"/>
+   <line l="376"/>
+   <line l="242"/>
+   <line l="221"/>
+   <line l="545"/>
+   <line l="536"/>
+   <line l="436"/>
+   <line l="459"/>
+   <line l="308"/>
+   <line l="269"/>
+   <line l="352"/>
+   <line l="363"/>
+   <line l="370"/>
+   <line l="393"/>
+   <line l="386"/>
+   <line l="346"/>
+   <line l="299"/>
+   <line l="580"/>
+   <line l="534"/>
+   <line l="481"/>
+   <line l="518"/>
+   <line l="510"/>
+   <line l="382"/>
+   <line l="313"/>
+   <line l="466"/>
+   <line l="425"/>
+   <line l="250"/>
+   <line l="323"/>
+   <line l="532"/>
+   <line l="574"/>
+   <line l="276"/>
+   <line l="271"/>
+   <line l="340"/>
+   <line l="515"/>
+   <line l="255"/>
+   <line l="546"/>
+   <line l="275"/>
+   <line l="462"/>
+  </lines>
+ </mapping>
+</allatori>

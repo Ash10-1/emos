@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.emos.workflow.db.dao.TbLeaveDao">
+    <select id="searchLeaveByInstanceId" parameterType="String" resultType="HashMap">
+        SELECT
+            u.`name`,
+            l.reason,
+            u.id AS userId,
+            DATE_FORMAT( l.`start`, '%Y-%m-%d %H:%i' ) AS `start`,
+            DATE_FORMAT( l.`end`, '%Y-%m-%d %H:%i' ) AS `end`,
+            l.days,
+            l.type,
+            l.`status`
+        FROM
+            tb_leave l
+        JOIN tb_user u ON l.user_id = u.id
+        WHERE l.instance_id=#{instanceId}
+    </select>
+    <update id="updateLeaveStatus" parameterType="HashMap">
+        UPDATE tb_leave SET status=#{status} WHERE instance_id=#{instanceId}
+    </update>
+
+</mapper>

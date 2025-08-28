@@ -1,0 +1,20 @@
+package rules;
+dialect  "mvel"
+
+import java.util.HashMap
+import com.example.emos.workflow.bo.Approval
+
+global String type
+global HashMap map
+
+
+rule "approval-list-1"
+    when
+        approval:Approval(type.equals("员工请假"))
+    then
+        String creatorName = (String) map.get("creatorName");
+        modify(approval){
+            setTitle(creatorName + "的请假申请")
+        }
+    end
+

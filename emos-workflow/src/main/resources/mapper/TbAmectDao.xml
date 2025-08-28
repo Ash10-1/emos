@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.emos.workflow.db.dao.TbAmectDao">
+    <insert id="insert" parameterType="com.example.emos.workflow.db.pojo.TbAmect">
+        INSERT INTO tb_amect
+        SET uuid = #{uuid},
+            user_id = #{userId},
+            amount = #{amount},
+            type_id = #{typeId},
+            reason = #{reason},
+            prepay_id = #{prepayId},
+            `status` = 1
+    </insert>
+</mapper>

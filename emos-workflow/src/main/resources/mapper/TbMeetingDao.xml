@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.emos.workflow.db.dao.TbMeetingDao">
+    <select id="searchMeetingByInstanceId" parameterType="String" resultType="HashMap">
+        SELECT
+            m.id,
+            m.uuid,
+            u.name,
+            u.photo,
+            m.`desc`,
+            m.place,
+            m.type,
+            m.date,
+            DATE_FORMAT( m.START, '%H:%i' ) AS start,
+            DATE_FORMAT( m.END, '%H:%i' ) AS end,
+            (
+                SELECT GROUP_CONCAT( u.name SEPARATOR "、") FROM tb_user u
+                WHERE u.status = 1 AND JSON_CONTAINS ( m.members, CONVERT ( u.id, CHAR ))
+            ) AS members
+        FROM tb_meeting m
+        JOIN tb_user u ON m.creator_id=u.id
+        WHERE instance_id=#{instanceId};
+    </select>
+    <select id="searchMeetingMembersInSameDept" parameterType="String" resultType="boolean">
+        SELECT
+            IF(COUNT(DISTINCT u.dept_id)=1,TRUE,FALSE ) AS bool
+        FROM
+            tb_meeting m
+                JOIN tb_user u ON JSON_CONTAINS ( m.members, CAST( u.id AS CHAR ) )
+        WHERE m.uuid=#{uuid} AND u.status = 1
+    </select>
+    <select id="searchMeetingByUUID" parameterType="String" resultType="HashMap">
+        SELECT
+            m.uuid,
+            m.title,
+            u.name,
+            DATE_FORMAT( m.date, '%Y-%m-%d' ) AS date,
+			m.place,
+			DATE_FORMAT( m.START, '%H:%i' ) AS start,
+            DATE_FORMAT( m.END, '%H:%i' ) AS end,
+			m.type,
+			m.status,
+			m.desc
+		FROM
+			tb_meeting m
+		JOIN tb_user u ON m.creator_id = u.id
+		WHERE m.uuid =#{uuid} AND u.status = 1
+    </select>
+    <select id="searchUserMeetingInMonth" parameterType="Map" resultType="String">
+        SELECT
+            DISTINCT DATE_FORMAT( m.date, '%Y/%m/%d' ) AS date
+        FROM
+            tb_meeting m
+            JOIN tb_user u ON JSON_CONTAINS ( m.members, CAST( u.id AS CHAR ) )
+        WHERE u.id = #{userId}
+          AND u.status = 1
+          AND m.status IN(3,4)
+          AND DATE_FORMAT(m.date,'%Y/%m')=#{express}
+    </select>
+    <select id="searchMeetingUnpresent" parameterType="String" resultType="Integer">
+        SELECT u.id
+        FROM tb_meeting m JOIN tb_user u ON JSON_CONTAINS ( m.members, CONVERT ( u.id, CHAR ) )
+             AND NOT JSON_CONTAINS ( IFNULL(m.present,JSON_ARRAY()), CONVERT ( u.id, CHAR ) )
+        WHERE u.`status`=1 AND m.uuid=#{uuid}
+    </select>
+    <update id="updateMeetingStatus" parameterType="HashMap">
+        UPDATE tb_meeting
+        SET `status`=#{status}
+        WHERE uuid=#{uuid}
+    </update>
+    <update id="updateMeetingUnpresent" parameterType="HashMap">
+        UPDATE tb_meeting
+        SET unpresent=#{unpresent}
+        WHERE uuid=#{uuid}
+    </update>
+</mapper>

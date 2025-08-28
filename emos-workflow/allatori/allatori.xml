@@ -1,0 +1,25 @@
+<config>
+    <input>
+        <!--in属性规定的是我们对那个JAR文件的字节码混淆，out属性是混淆后的JAR文件存放路径-->
+        <jar in="D:\emos-workflow\target\emos-workflow-0.0.1-SNAPSHOT.jar"
+             out="D:\emos-workflow\target\emos-workflow-obfuscated.jar"/>
+
+    </input> 
+    <keep-names>
+        <class access="protected+">
+            <field access="protected+"/>
+            <method access="protected+"/>
+        </class>
+    </keep-names>
+    <ignore-classes>
+        <!--这些都是不需要被混淆加密的类-->
+        <class template="class *springframework*" />
+        <class template="class *jni*" />
+        <class template="class *alibaba*"/>
+        <class template="class *activiti*"/>
+        <!--引用了RedisTemplate的Java类被混淆之后，Spring创建对象会有一场，所以不用混淆-->
+        <class template="class com.example.emos.workflow.config.quartz.MeetingRoomJob"/>
+    </ignore-classes>
+    <property name="skip-renaming" value="enable"/>
+    <property name="log-file" value="log.xml"/>
+</config>
